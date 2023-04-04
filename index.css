@@ -1,3 +1,35 @@
+:root {
+    /* fonts */
+    --acn-title-font: 'Bebas Neue', sans-serif;
+    --acn-subtitle-font: 'Fira Sans', sans-serif;
+    --acn-heading-font: 'Bebas Neue', sans-serif;
+    --acn-body-font: 'Roboto', sans-serif;
+
+     /* colors */
+     --acn-primary-color: rgb(145, 203, 251);
+     --acn-secondary-color: rgb(66, 148, 189);
+     --acn-highlight-color: rgb(250, 225, 120);
+     --acn-dark-color: #212121;
+     --acn-light-color: #deeefb;
+     --acn-background-color: rgba(250, 250, 250, .8);
+
+     /* nav bar colors */
+     --acn-nav-bg-color: rgb(33, 33, 33, .8);
+     --acn-nav-toggler-color: var(--acn--highlight-color);
+     --acn-nav-toggler-glow: rgba(250, 225, 120, .55);
+
+    /* form colors */
+    --acn-nav-bg-color: var(--acn--secondary-color);
+    --acn-formfocus-shadow: var(--acn--primary-color);
+    --acn-form-background-color: var(--acn--background-color);
+
+     /* text styles */
+     --acn-title-color: var(--acn--dark-color);
+     --acn-font-size: 1.2rem;
+     --acn-font-weight: 400;
+     --acn-line-height: 1.5rem;
+}
+
 /* font-family: 'Alkatra', cursive;
 font-family: 'Allan', cursive;
 font-family: 'Bebas Neue', cursive;
@@ -17,6 +49,13 @@ body {
     /*d-flex*/
     flex-direction: column;
     /*flex-column*/
+
+  font-family: var(--acn-body-font);
+  font-family: var(acn-font-size);
+  font-family: var(acn-font-weight);
+  font-family: var(acn-line-height);
+  font-family: var(--acn-dark-color);
+  font-family: var(--acn-background-color);
 }
 
 main {
@@ -27,6 +66,65 @@ footer {
     flex-shrink: 0;
 }
 /*End Sticky Footer*/
+
+/* Start: Main Header */
+.mainLogo {
+    height: .6em;
+}
+
+.mainHeader {
+    height: 200px;
+    margin-top: 76px;
+    background-image: url(/assets/DevPortFolioBG_576.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--acn-light-color);
+}
+
+.mainTitle, 
+.subTitle {
+    color: var(--acn-dark-color);
+}
+
+.mainTitle {
+    font-family: var(--acn-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.subTitle {
+    font-family: var(--acn-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+}
+
+.mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.mainHeader-content {
+    height: 100%;
+    display: flex ;
+    align-items: center;
+}
+
+
+/* End: Main Header */
+
+/* Start: Footer */
+.socialicons {
+    font-size: 2rem;
+    color: var(--acn-secondary-color);
+    transition: color 0.25s;
+}
+
+.socialicons:hover {
+    font-size: 2rem;
+    color: var(--acn-highlight-color);
+}
+
 
 
 
