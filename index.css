@@ -125,9 +125,66 @@ footer {
     color: var(--acn-highlight-color);
 }
 
+/* End: Footer */
 
 
+/* Start: Media Queries */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    background-image: url(/assets/DevPortFolioBG_767.png);
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainHeader {
+        background-image: url(/assets/DevPortFolioBG_992.png);
+        height: 300px;
+    }
 
+    .mainTitle {
+        font-size: 4.5 rem;
+        line-height: 3.5 rem;
+    } 
 
+    .subTitle {
+        font-size: 1.2 rem;
+        line-height: .1 rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mainHeader {
+        background-image: url(/assets/DevPortFolioBG_1200.png);
+        height: 400px;
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mainHeader {
+        background-image: url(/assets/DevPortFolioBG_2560.png);
+        height: 500px;
+    }
+
+    .mainTitle {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+        line-height: .12rem;
+    }
+
+}
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}
+/* End: Media Queries */
 
