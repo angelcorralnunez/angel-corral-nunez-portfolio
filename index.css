@@ -1,0 +1,35 @@
+/* font-family: 'Alkatra', cursive;
+font-family: 'Allan', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Mallanna', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*Start Sticky Footer*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    /*d-flex*/
+    flex-direction: column;
+    /*flex-column*/
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+/*End Sticky Footer*/
+
+
+
+
+
+
