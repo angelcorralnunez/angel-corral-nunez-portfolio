@@ -100,6 +100,16 @@ h1, .h1 {
     background-color: var(--acn-primary-color);
 }
 
+.profile-pic {
+    border-radius: 20px;
+    border: 1px solid;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#skills .colored {
+    colr: blue;
+}
+
 /* Begin Main Elements */
 
 .navbar-toggler-acn {

@@ -95,12 +95,19 @@
 
     <main class="container-xxl">
         <section id="about" class="sec-page">
-            <h2>About Me</h2> 
-            <div class="row ">
-                <div class="col-12 col-lg-4"></div>
+            <h2 class="display-4">About Me</h2> 
+            <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="/assets/dane_profile.jpg" />
+                        <source media="(min-width: 768px)" srcset="/assets/dane_profile_992.jpg" />
+                        <source media="(min-width: 576px)" srcset="/assets/dane_profile_768.jpg" />
+                        <img src="/assets/dane_profile_576.jpg" class="img-fluid profile-pic">
+                    </picture>
+                    </div>
                 <div class="col-12 col-lg-8"></div>
                 <h3>I'm Angel Corral Nunez, A Full Stack software Developer</h3>
-                <p>I'm a US based developer. I have been building full stack applications for several months and am passionate about front end development and web accessibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna cursus eget nunc. Risus feugiat in ante metus. Velit dignissim sodales ut eu sem integer vitae. Massa enim nec dui nunc. Eu lobortis elementum nibh tellus molestie nunc non. Pulvinar pellentesque habitant morbi tristique senectus et netus et.'</p>
+                <p>I am a US based developer and have been building full stack applications for several months. I'm passionate about front end development and web accessibility. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna cursus eget nunc. Risus feugiat in ante metus. Velit dignissim sodales ut eu sem integer vitae. Massa enim nec dui nunc. Eu lobortis elementum nibh tellus molestie nunc non. Pulvinar pellentesque habitant morbi tristique senectus et netus et.'</p>
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col">Name: Angel Corral Nunez</div>
                     <div class="col">Email: <a href="mailto:angelcorralnunez@gmail.com">angelcorralnunez@gmail.com</a></div>
@@ -112,6 +119,36 @@
         </section>
         <section id="skills" class="sec-page">
             <h2>My Toolbox</h2>
+            <p>I am a creative problem solver. I build full-stack web applications. I use C#, SQL, ASP.NET, JavaScript, Bootstrap, HTML, and CSS. I have highlighted my key technical skills that I will bring to your project. Check out some of my <a href="#projects">full-stack projects</a> below! </a></p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+                <div class="col">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <p>I use C# daily to build full-stack web applications. You can see my projects where I utilized C# in my <a href="#projects">projects</a>section!</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <p>I use ASP.NET CORE Web and MVC frameworks daily to build full-stack web applications. You can see my projects where I utilized ASP.NET Core in my <a href="#projects">projects</a>section!</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p>I use Vanilla JS and am comfortable with many JS frameworks to build full-stack web applications. You can see my projects where I utilized JS in my <a href="#projects">projects</a>section!</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-bootstrap-plain"></i>
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <p>I use these technologies daily to build full-stack web applications. You can see my projects where I utilized these technologies in my <a href="#projects">projects</a>section!</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-github-original-wordmark colored"></i>
+                    <p>I use these technologies daily to build full-stack web applications. You can see my projects where I utilized these technologies in my <a href="#projects">projects</a>section!</p>
+                </div>
+                <div class="col">
+                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                    <p>I use SQL to build full-stack web applications. You can see my projects where I utilized SQL in my <a href="#projects">projects</a>section!</p>
+                </div>
+            </div>
         </section>
         <section id="projects" class="sec-page">
             <h2>My Projects</h2>
