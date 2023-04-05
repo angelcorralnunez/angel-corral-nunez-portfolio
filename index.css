@@ -107,9 +107,38 @@ h1, .h1 {
 }
 
 #skills .colored {
-    colr: blue;
+    color: blue;
 }
 
+.sec-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--acn-dark-color);
+    color: var(--acn-light-color);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.cta-span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cta-arrow {
+    color: var(--acn-highlight-color);
+    font-size: 2rem;
+}
+
+.cta-arrow:hover {
+    filter: brightness(1.2);
+    transition: .4s;
+}
+
+ 
 /* Begin Main Elements */
 
 .navbar-toggler-acn {
@@ -377,6 +406,15 @@ footer {
         line-height: .1 rem;
     }
 
+    .sec-cta {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .cta-arrow {
+        font-size: 2.5rem;
+    }
+
     #angelParent {
         display: grid;
         grid-template-columns: 25% 75%;
@@ -429,7 +467,7 @@ footer {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px, max-width: 992px) {
+@media (min-width: 992px) {
 
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_1200.png);
@@ -504,6 +542,16 @@ footer {
     .subTitle {
         font-size: 1rem;
         line-height: .12rem;
+    }
+
+    .sec-cta {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+    }
+
+    .cta-arrow {
+        font-size: 4rem;
     }
 
     .mainHeader-wrapper {
