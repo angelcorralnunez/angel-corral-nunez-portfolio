@@ -81,9 +81,6 @@ footer {
     background: var(--acn-nav-bg-color);
 }
 
-
-
-
 /* Start: Main Header */
 .mainHeader-wrapper {
     margin-top: 0;
@@ -116,7 +113,7 @@ footer {
 
 .mainHeader-cover .mainTitle,
 .mainHeader-content .subTitle {
-    color: var(--acn-light-color);
+    color: #111111;
 }
 
 .mainTitle, 
@@ -140,10 +137,6 @@ footer {
     letter-spacing: .09rem;
 }
 
-.mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 .mainHeader-content {
     height: 100%;
     display: flex ;
@@ -195,45 +188,45 @@ footer {
         line-height: .1 rem;
     }
 
+    .mainHeader-wrapper {
+        margin-left: 2.25rem;
+        margin-bottom: .5rem;
+        padding-top: 3rem;
+    }
+
     #angelParent {
         display: grid;
         grid-template-columns: 25% 75%;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        max-height: 3rem;
+        margin-bottom: .25rem;
+        margin-top: 2rem;
     }
     
     #angel {
         display: grid;
         width: 100%;
         height: 3rem;
-        margin-right: 0;
-        margin-bottom: 0;
         padding-top: 1.25rem;
     }
     
     #semiColon-2 {
         margin: auto;
-        width: 100%;
-        margin-left: 40px;
+        width: 50%;
+        margin-left: 2.5rem;
         margin-top: 5px;
     }
 
     .mainLogo {
-        display: grid;
-        columns: 1fr;
-        height: 50px;
-        width: 50px;
+        height: 3rem;
+        width: 3rem;
     }
 
     #corral-nunez {
         height: 3rem;
-        padding-top: 1rem;
+        padding-top: .75rem;
     }
 
     #dev {
         font-family: var(--acn-subtitle-font); 
-        color: #111111;
         font-size: 1.25rem; 
         font-weight: 500;
         letter-spacing: .025rem;
@@ -253,7 +246,7 @@ footer {
 
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_767.png);
-        height: 300px;
+        height: 400px;
     }
 
     .mainTitle {
@@ -266,45 +259,48 @@ footer {
         line-height: .1 rem;
     }
 
+    .mainHeader-wrapper {
+        margin-left: 2.25rem;
+        margin-bottom: .5rem;
+        padding-top: 3rem;
+    }
+
     #angelParent {
         display: grid;
         grid-template-columns: 25% 75%;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        max-height: 3rem;
+        margin-bottom: .25rem;
+        margin-top: 2rem;
     }
     
     #angel {
         display: grid;
         width: 100%;
         height: 3rem;
-        margin-right: 0;
-        margin-bottom: 0;
         padding-top: 1.25rem;
     }
     
     #semiColon-2 {
-        margin: auto;
         width: 100%;
-        margin-left: 40px;
-        margin-top: 5px;
+        height: 3rem;
+        width: 3rem;
+        margin-left: 2.25rem;
+        margin-top: .5rem;
+        padding-left: .25rem;
+        padding-top: .25rem;
     }
 
     .mainLogo {
-        display: grid;
-        columns: 1fr;
-        height: 50px;
-        width: 50px;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     #corral-nunez {
         height: 3rem;
-        padding-top: 1rem;
+        padding-top: .75rem;
     }
 
     #dev {
         font-family: var(--acn-subtitle-font); 
-        color: #111111;
         font-size: 1.25rem; 
         font-weight: 500;
         letter-spacing: .025rem;
@@ -323,7 +319,7 @@ footer {
 
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_992.png);
-        height: 300px;
+        height: 400px;
     }
 
     .mainTitle {
@@ -350,7 +346,7 @@ footer {
         height: 3rem;
         margin-right: 0;
         margin-bottom: 0;
-        padding-top: 1.25rem;
+        padding-top: 1.5rem;
     }
     
     #semiColon-2 {
@@ -374,7 +370,6 @@ footer {
 
     #dev {
         font-family: var(--acn-subtitle-font); 
-        color: #111111;
         font-size: 1.25rem; 
         font-weight: 500;
         letter-spacing: .025rem;
@@ -389,7 +384,7 @@ footer {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px, max-width: 992px) {
 
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_1200.png);
@@ -412,7 +407,7 @@ footer {
         height: 3rem;
         margin-right: 0;
         margin-bottom: 0;
-        padding-top: 1.25rem;
+        padding-top: 1.5rem;
     }
     
     #semiColon-2 {
@@ -436,7 +431,6 @@ footer {
 
     #dev {
         font-family: var(--acn-subtitle-font); 
-        color: #111111;
         font-size: 1.5rem; 
         font-weight: 500;
         letter-spacing: .025rem;
@@ -458,61 +452,65 @@ footer {
     }
 
     .mainTitle {
-        font-size: 6rem;
-        line-height: 5rem;
+        font-size: 5rem;
+        line-height: 4rem;
     }
 
     .subTitle {
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: .12rem;
     }
-    
-    #semiColon-2 {
-        margin: 12px 0;
-        padding-left: 8px;
-    }
-    
-    #dev {
-        font-family: var(--acn-subtitle-font); 
-        color: #111111;
-        font-size: 2rem; 
-        font-weight: 500;
-        letter-spacing: .09rem;
-        margin: 10px 0;
-        padding: 20px 8px 16px 8px;
-        text-align: left;
-    }
 
-    .mainLogo {
-        height: 1em;
-        display: grid;
-        columns: 1fr;
-        height: 100px;
-        max-height: 100px;
-        width: 100px;
-        max-width: 100px;
+    .mainHeader-wrapper {
+        height: 500px;
+        margin-left: 4rem;
+        margin-top: 2rem;
+        padding-top: 5rem;
     }
     
     #angelParent {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        margin-bottom: 10px;
-        margin-top: 40px;
+        width: 20rem;
+        height: 15rem;
+        margin-top: 0;
+        padding-top: 0;
     }
     
     #angel {
-        display: grid;
-        width: 100%;
-        height: 80px;
-        margin-top: 30px;
+        width: 10rem;
+        height: 4rem;
+        margin-top: 0;
         margin-bottom: 0;
         padding-right: 0;
+        padding-top: 0;
+    }
+
+    #semiColon-2 {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 5rem;
+        margin-top: -.5rem;
+        padding-left: .25rem;
+        padding-top: 0;
     }
     
+    .mainLogo {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
     #corral-nunez {
-        height: 80px;
+        width: 25rem;
+        height: 4rem;
+        margin-left: 0;
+        margin-top: 2rem;
+        padding-top: 0;
     }
     
+    #dev {
+        padding: 16px 8px 20px 2px;
+        font-size: 2rem; 
+    }
+
     #contact {
         margin-left: 2px;
     }
