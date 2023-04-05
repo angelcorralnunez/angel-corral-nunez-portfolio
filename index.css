@@ -67,6 +67,41 @@ footer {
 }
 /*End Sticky Footer*/
 
+/* Element Overrides */
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h6, .h6,
+h5, .h5,
+h4, .h4,
+h3, .h3,
+h2, .h2,
+h1, .h1 {
+    font-family: var(--acn-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--acn-title-color);
+    letter-spacing: .1rem;
+}
+/* End Element Overrides */
+
+/* Begin Main Elements */
+.sec-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.sec-page:nth-child(even) {
+    background-color: var(--acn-light-color);
+}
+
+.sec-page:nth-child(odd) {
+    background-color: var(--acn-primary-color);
+}
+
+/* Begin Main Elements */
+
 .navbar-toggler-acn {
     color: var(--acn-nav-toggler-color);
     font-size: 1.5rem;
@@ -517,7 +552,7 @@ footer {
 
 }
 
-XX-Large devices (larger desktops, 1400px and up)
+/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
 }
