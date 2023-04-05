@@ -67,9 +67,28 @@ footer {
 }
 /*End Sticky Footer*/
 
+.navbar-toggler-acn {
+    color: var(--acn-nav-toggler-color);
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    color: var(--acn-nav-toggler-glow);
+}
+
+#mainNav,
+footer {
+    background: var(--acn-nav-bg-color);
+}
+
+
+
+
 /* Start: Main Header */
-.mainLogo {
-    height: .6em;
+.mainHeader-wrapper {
+    margin-top: 0;
+    margin-left: 25px;
+    height: 100%;
 }
 
 .mainHeader {
@@ -79,6 +98,25 @@ footer {
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--acn-light-color);
+}
+
+.mainHeader-cover {
+    margin-top: 76px;
+    height: 400px;
+    background-image: url(/assets/cityBG_2560.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+}
+
+.mainHeader-cover > .mainHeader-content {
+    backdrop-filter: blur(2px) brightness(90%);
+}
+
+.mainHeader-cover .mainTitle,
+.mainHeader-content .subTitle {
+    color: var(--acn-light-color);
 }
 
 .mainTitle, 
@@ -92,10 +130,12 @@ footer {
     line-height: 2rem;
 }
 
+
 .subTitle {
-    font-family: var(--acn-subtitle-font);
-    font-size: .6rem;
-    line-height: 1rem;
+    font-family: var(--acn-subtitle-font); 
+    color: #111111;
+    line-height: 2rem;
+    font-size: 1.5rem; 
     font-weight: 300;
     letter-spacing: .09rem;
 }
@@ -110,8 +150,16 @@ footer {
     align-items: center;
 }
 
-
 /* End: Main Header */
+
+.btn-primary {
+    --bs-btn-bg: var(--acn-secondary-color);
+    --bs-btn-border-color: var(--acn-secondary-color);
+    --bs-btn-hover-bg: var(--acn-highlight-color);
+    --bs-btn-hover-border: var(--acn-secondary-color);
+    --bs-btn-hover-color: var(--acn-dark-color);
+}
+
 
 /* Start: Footer */
 .socialicons {
@@ -129,13 +177,150 @@ footer {
 
 
 /* Start: Media Queries */
+/* X-Small devices (landscape phones, 576px and below) */
+@media (max-width: 575px) {
+     
+    .mainHeader {
+        background-image: url(/assets/DevPortFolioBG_576.png);
+        height: 300px;
+    }
+
+    .mainTitle {
+        font-size: 4.5 rem;
+        line-height: 3.5 rem;
+    } 
+
+    .subTitle {
+        font-size: 1.2 rem;
+        line-height: .1 rem;
+    }
+
+    #angelParent {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-height: 3rem;
+    }
+    
+    #angel {
+        display: grid;
+        width: 100%;
+        height: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 1.25rem;
+    }
+    
+    #semiColon-2 {
+        margin: auto;
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .mainLogo {
+        display: grid;
+        columns: 1fr;
+        height: 50px;
+        width: 50px;
+    }
+
+    #corral-nunez {
+        height: 3rem;
+        padding-top: 1rem;
+    }
+
+    #dev {
+        font-family: var(--acn-subtitle-font); 
+        color: #111111;
+        font-size: 1.25rem; 
+        font-weight: 500;
+        letter-spacing: .025rem;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    #contact {
+        margin: 15px 0 0 0;
+    }
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    background-image: url(/assets/DevPortFolioBG_767.png);
+
+    .mainHeader {
+        background-image: url(/assets/DevPortFolioBG_767.png);
+        height: 300px;
+    }
+
+    .mainTitle {
+        font-size: 4.5 rem;
+        line-height: 3.5 rem;
+    } 
+
+    .subTitle {
+        font-size: 1.2 rem;
+        line-height: .1 rem;
+    }
+
+    #angelParent {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-height: 3rem;
+    }
+    
+    #angel {
+        display: grid;
+        width: 100%;
+        height: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 1.25rem;
+    }
+    
+    #semiColon-2 {
+        margin: auto;
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .mainLogo {
+        display: grid;
+        columns: 1fr;
+        height: 50px;
+        width: 50px;
+    }
+
+    #corral-nunez {
+        height: 3rem;
+        padding-top: 1rem;
+    }
+
+    #dev {
+        font-family: var(--acn-subtitle-font); 
+        color: #111111;
+        font-size: 1.25rem; 
+        font-weight: 500;
+        letter-spacing: .025rem;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    #contact {
+        margin: 15px 0 0 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_992.png);
         height: 300px;
@@ -150,10 +335,62 @@ footer {
         font-size: 1.2 rem;
         line-height: .1 rem;
     }
+
+    #angelParent {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-height: 3rem;
+    }
+    
+    #angel {
+        display: grid;
+        width: 100%;
+        height: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 1.25rem;
+    }
+    
+    #semiColon-2 {
+        margin: auto;
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .mainLogo {
+        display: grid;
+        columns: 1fr;
+        height: 50px;
+        width: 50px;
+    }
+
+    #corral-nunez {
+        height: 3rem;
+        padding-top: 1rem;
+    }
+
+    #dev {
+        font-family: var(--acn-subtitle-font); 
+        color: #111111;
+        font-size: 1.25rem; 
+        font-weight: 500;
+        letter-spacing: .025rem;
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    #contact {
+        margin: 15px 0 0 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_1200.png);
         height: 400px;
@@ -161,6 +398,56 @@ footer {
         line-height: 4.5rem;
     }
 
+    #angelParent {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-height: 3rem;
+    }
+    
+    #angel {
+        display: grid;
+        width: 100%;
+        height: 3rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 1.25rem;
+    }
+    
+    #semiColon-2 {
+        margin: auto;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    .mainLogo {
+        display: grid;
+        columns: 1fr;
+        height: 50px;
+        width: 50px;
+    }
+
+    #corral-nunez {
+        height: 3rem;
+        padding-top: 1rem;
+    }
+
+    #dev {
+        font-family: var(--acn-subtitle-font); 
+        color: #111111;
+        font-size: 1.5rem; 
+        font-weight: 500;
+        letter-spacing: .025rem;
+        margin: 15px 0 0 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    #contact {
+        margin: 0;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -178,6 +465,56 @@ footer {
     .subTitle {
         font-size: 1.5rem;
         line-height: .12rem;
+    }
+    
+    #semiColon-2 {
+        margin: 12px 0;
+        padding-left: 8px;
+    }
+    
+    #dev {
+        font-family: var(--acn-subtitle-font); 
+        color: #111111;
+        font-size: 2rem; 
+        font-weight: 500;
+        letter-spacing: .09rem;
+        margin: 10px 0;
+        padding: 20px 8px 16px 8px;
+        text-align: left;
+    }
+
+    .mainLogo {
+        height: 1em;
+        display: grid;
+        columns: 1fr;
+        height: 100px;
+        max-height: 100px;
+        width: 100px;
+        max-width: 100px;
+    }
+    
+    #angelParent {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    
+    #angel {
+        display: grid;
+        width: 100%;
+        height: 80px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+    
+    #corral-nunez {
+        height: 80px;
+    }
+    
+    #contact {
+        margin-left: 2px;
     }
 
 }
