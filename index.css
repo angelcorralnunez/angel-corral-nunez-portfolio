@@ -100,6 +100,14 @@ h1, .h1 {
     background-color: var(--acn-primary-color);
 }
 
+.sec-page:nth-last-child(2) {
+    background-color: var(--acn-primary-color);
+}
+
+.sec-page:last-child {
+    background-color: var(--acn-light-color);
+}
+
 .profile-pic {
     border-radius: 20px;
     border: 1px solid;
@@ -150,8 +158,7 @@ h1, .h1 {
     color: var(--acn-nav-toggler-glow);
 }
 
-#mainNav,
-footer {
+#mainNav {
     background: var(--acn-nav-bg-color);
 }
 
@@ -238,6 +245,36 @@ footer {
 .socialicons:hover {
     font-size: 2rem;
     color: var(--acn-highlight-color);
+
+}
+
+footer {
+    color: var(--acn-nav-bg-color);
+}
+
+.footer-main {
+    /* bg color has to be set to the last 2 colors of linear gradient */
+    background-color: var(--acn-dark-color);
+}
+
+.footer-cta {
+    background-color: var(--acn-secondary-color);
+    border-radius: 10px;
+    width: 75%;
+}
+
+.footer-message {
+    color: var(--acn-dark-color);
+    letter-spacing: .1rem;
+}
+
+.footer-bg-cta {
+    /* linear gradient last 2 colors must match footer-main bg color */
+    background: linear-gradient(to bottom,
+    var(--acn-background-color) 0%,
+    var(--acn-background-color) 50%,
+    var(--acn-dark-color) 50%,
+    var(--acn-dark-color) 100%);    
 }
 
 /* End: Footer */
@@ -310,7 +347,7 @@ footer {
     }
 
     #contact {
-        margin: 15px 0 0 0;
+        /* margin: 15px 0 0 0; */
     }
 }
 
@@ -384,7 +421,7 @@ footer {
     }
 
     #contact {
-        margin: 15px 0 0 0;
+        /* margin: 15px 0 0 0; */
     }
 }
 
@@ -462,7 +499,7 @@ footer {
     }
 
     #contact {
-        margin: 15px 0 0 0;
+        /* margin: 15px 0 0 0; */
     }
 }
 
@@ -523,7 +560,7 @@ footer {
     }
 
     #contact {
-        margin: 0;
+        /* margin: 0; */
     }
 }
 
@@ -605,7 +642,7 @@ footer {
     }
 
     #contact {
-        margin-left: 2px;
+        /* margin-left: 2px; */
     }
 
 }

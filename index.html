@@ -25,13 +25,14 @@
     <!-- css -->
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/hoverCard.css">
+    <link rel="stylesheet" href="/blogCard.css">
     <!-- dev icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/favicon_io/favicon.ico" type="image/x-icon" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -186,8 +187,8 @@
                                 <p>
                                     A full stack bug tracker app built with ASP.NET MVC, C#, and SQL.
                                 </p>
-                                <button type="button" class="btn btn-primary" 
-                                data-bs-toggle="modal" data-bs-target="#projectOneModal">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#projectOneModal">
                                     Learn More
                                 </button>
                             </div>
@@ -205,8 +206,8 @@
                                 <p>
                                     A full stack financial tracker app built with ASP.NET MVC, C#, and SQL.
                                 </p>
-                                <button type="button" class="btn btn-primary"
-                                data-bs-toggle="modal" data-bs-target="#projectTwoModal">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#projectTwoModal">
                                     Learn More
                                 </button>
                             </div>
@@ -224,8 +225,8 @@
                                 <p>
                                     A full stack blog built with ASP.NET MVC, C#, and SQL.
                                 </p>
-                                <button type="button" class="btn btn-primary"
-                                data-bs-toggle="modal" data-bs-target="#projectThreeModal">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#projectThreeModal">
                                     Learn More
                                 </button>
                             </div>
@@ -354,18 +355,145 @@
                 <i class="bi bi-arrow-right-square-fill"></i>
             </a>
             <span>Want to see my recent work?<br>
-            Check out my <a href="#">bug tracker</a>!</span>
+                Check out my <a href="#">bug tracker</a>!</span>
             <a href="#" class="cta-arrow">
                 <i class="bi bi-arrow-left-square-fill"></i>
             </a>
         </section>
         <section id="blog" class="sec-page">
             <h2>What I Enjoy Talking About</h2>
+            <p>I am passionate about sharing what I have learned along my journey with others, check out my blog to
+                learn more.</p>
+            <div id="blogs">
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/assets/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Blog post image">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">January</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">Make SQL Queries Fly</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui magnam possimus vero asperiores modi voluptate, fugit dolorum illo laborum ex
+                                    odit, assumenda, nulla aliquam a voluptatibus consectetur. Alias, commodi illo?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam possimus vero
+                                    asperiores modi voluptate, fugit dolorum illo laborum ex odit, assumenda, nulla
+                                    aliquam a voluptatibus consectetur. Alias, commodi illo?</pc>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/assets/Blog/Blog_Database.jpg" class="blog-image" alt="Blog post image">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">January</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">Storing Images in a DB</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui magnam possimus vero asperiores modi voluptate, fugit dolorum illo laborum ex
+                                    odit, assumenda, nulla aliquam a voluptatibus consectetur. Alias, commodi illo?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam possimus vero
+                                    asperiores modi voluptate, fugit dolorum illo laborum ex odit, assumenda, nulla
+                                    aliquam a voluptatibus consectetur. Alias, commodi illo?</pc>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/assets/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Blog post image">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">January</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">The Power of CSS</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui magnam possimus vero asperiores modi voluptate, fugit dolorum illo laborum ex
+                                    odit, assumenda, nulla aliquam a voluptatibus consectetur. Alias, commodi illo?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam possimus vero
+                                    asperiores modi voluptate, fugit dolorum illo laborum ex odit, assumenda, nulla
+                                    aliquam a voluptatibus consectetur. Alias, commodi illo?</pc>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card mb-4 blog-article">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/assets/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Blog post image">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">January</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">SPA vs MPA Frameworks</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Qui magnam possimus vero asperiores modi voluptate, fugit dolorum illo laborum ex
+                                    odit, assumenda, nulla aliquam a voluptatibus consectetur. Alias, commodi illo?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam possimus vero
+                                    asperiores modi voluptate, fugit dolorum illo laborum ex odit, assumenda, nulla
+                                    aliquam a voluptatibus consectetur. Alias, commodi illo?</pc>
+                                <div>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 3 days ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="contact" class="sec-page">
             <h2>How to Reach Me</h2>
             <div class="bg-light p-2 border-1 border border-info shadow-lg">
-                <form action="#">
+                <form method="post" data-netlify="true" name="contact">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <label for="FirstName" class="form-label">First Name</label>
@@ -388,8 +516,8 @@
                         </div>
                         <div class="col-12">
                             <label for="Subject" class="form-label">Subject</label>
-                            <input name"Subject" type="text" aria-label="Subject" placeholder="Subject" class="form-control"
-                                required />
+                            <input name"Subject" type="text" aria-label="Subject" placeholder="Subject"
+                                class="form-control" required />
                         </div>
                         <div class="col-12">
                             <label for="Message" class="form-label">Message</label>
@@ -407,20 +535,25 @@
 
 </body>
 
-<footer class="container-fluid bg-dark">
-    <div class="container-xxl py-3">
-        <div class="row row-cols-1 row-cols-md-3 text-center align-items-center container-xxl">
-            <div class="col">
-                <img src="/assets/Semicolon Angel Corral Nunez Logo/Logo Files/For Web/svg/Color logo - no background.svg"
-                    height="50">
+<footer class="container-fluid mt-3">
+    <div class="row footer-bg-cta">
+        <div class="col">
+            <div class="container py-2 footer-cta text-center">
+                <h1 class="footer-message">Let's Work Together</h1>
+                <h4 class="footer-message">Need assistance with your project? Let's discuss how I can help.</h4>
             </div>
-            <div class="col text-md-end">
-                <a href="https://www.linkedin.com/in/angelcorralnunez/"><i
-                        class="socialicons bi bi-linkedin px-1"></i></a>
-                <a href="https://github.com/angelcorralnunez"><i class="socialicons bi bi-github px-1"></i></a>
-            </div>
-            <div class="col text-light order-md-first">&copy; 2023 Angel Corral Nunez</div>
         </div>
+    </div>
+    <div class="footer-main py-3 row row-cols-1 row-cols-md-3 gy-3 text-center align-items-center">
+        <div class="col">
+            <img src="/assets/Semicolon Angel Corral Nunez Logo/Logo Files/For Web/svg/Color logo - no background.svg"
+                height="50">
+        </div>
+        <div class="col text-md-end">
+            <a href="https://www.linkedin.com/in/angelcorralnunez/"><i class="socialicons bi bi-linkedin px-1"></i></a>
+            <a href="https://github.com/angelcorralnunez"><i class="socialicons bi bi-github px-1"></i></a>
+        </div>
+        <div class="col text-light order-md-first">&copy; 2023 Angel Corral Nunez</div>
     </div>
 </footer>
 
@@ -439,44 +572,61 @@
                         <div class="col-12 col-lg-5">
                             <div id="projectOneIndicators" class="carousel slide" data-bs-theme="dark">
                                 <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                  <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#projectOneIndicators" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="/assets/logos/BugTracker_600.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="...">
-                                  </div>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/logos/BugTracker_600.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#projectOneIndicators" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#projectOneIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectOneIndicators" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectOneIndicators" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectOneIndicators" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
-                                  </button>
-                              </div>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectOneIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-7">
                             <h3>Insecticide</h3>
                             <div>
-                                <p>Insecticide is a software defect tracking system. Commonly known as a bug tracker. Insectcide is built with ASP.NET, MVC, C# and SQL. A role based security system was implemented to create permission based roles. The roles of Admin , Project Manager, Developer and Submitter restrict what the user can see and do. The software allows for users to submit tickets and those tickets are tracked through status from Open to Complete.</p>
-                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
+                                <p>Insecticide is a software defect tracking system. Commonly known as a bug tracker.
+                                    Insectcide is built with ASP.NET, MVC, C# and SQL. A role based security system was
+                                    implemented to create permission based roles. The roles of Admin , Project Manager,
+                                    Developer and Submitter restrict what the user can see and do. The software allows
+                                    for users to submit tickets and those tickets are tracked through status from Open
+                                    to Complete.</p>
+                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with
+                                    HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was
+                                    built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
                             </div>
                         </div>
                         <ul class="list-group">
@@ -514,44 +664,56 @@
                         <div class="col-12 col-lg-5">
                             <div id="projectTwoIndicators" class="carousel slide" data-bs-theme="dark">
                                 <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                  <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#projectTwoIndicators" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="/assets/logos/ExpenseTracker_600.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="...">
-                                  </div>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/logos/ExpenseTracker_600.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#projectTwoIndicators" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#projectTwoIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectTwoIndicators" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectTwoIndicators" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectTwoIndicators" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
-                                  </button>
-                              </div>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectTwoIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-7">
                             <h3>Money Grow</h3>
                             <div>
                                 <p>A full stack financial tracker app built with ASP.NET MVC, C#, and SQL.</p>
-                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
+                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with
+                                    HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was
+                                    built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
                             </div>
                         </div>
                         <ul class="list-group">
@@ -589,44 +751,56 @@
                         <div class="col-12 col-lg-5">
                             <div id="projectThreeIndicators" class="carousel slide" data-bs-theme="dark">
                                 <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                  <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#projectThreeIndicators" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
                                 </div>
                                 <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="/assets/logos/Blog_600.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="...">
-                                  </div>
+                                    <div class="carousel-item active">
+                                        <img src="/assets/logos/Blog_600.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#projectThreeIndicators" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#projectThreeIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectThreeIndicators" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#projectThreeIndicators" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectThreeIndicators" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
-                                  </button>
-                              </div>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#projectThreeIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-7">
                             <h3>Code Talk</h3>
                             <div>
                                 <p>A full stack blog built with ASP.NET MVC, C#, and SQL.</p>
-                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
+                                <p>The system was built with C# and .Net in 3 weeks. The front end was developed with
+                                    HTML, Javascript and Bootstrap. The back-end utlizies MVC and C#. The database was
+                                    built with SQL Server and hosted on Azure. Please visit the site and try it out.</p>
                             </div>
                         </div>
                         <ul class="list-group">
@@ -652,6 +826,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-</script>
+    </script>
 
 </html>
