@@ -428,6 +428,12 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+    #prof-pic-angel {
+        display: flex;
+        justify-content: center; 
+    }
+
+
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_992.png);
         height: 400px;
@@ -505,6 +511,10 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    #prof-pic-angel {
+        margin-left: 1rem;
+    }
 
     .mainHeader {
         background-image: url(/assets/DevPortFolioBG_1200.png);
@@ -649,6 +659,10 @@ footer {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+
+    #prof-pic-angel {
+        margin-left: 1.5rem;
+    }
 
 }
 /* End: Media Queries */
