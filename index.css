@@ -199,7 +199,8 @@ h1, .h1 {
 
 .mainTitle, 
 .subTitle {
-    color: var(--acn-dark-color);
+    /* color: var(--acn-dark-color); */
+    color: #FFFFFF!important;
 }
 
 .mainTitle {
@@ -211,7 +212,6 @@ h1, .h1 {
 
 .subTitle {
     font-family: var(--acn-subtitle-font); 
-    color: #111111;
     line-height: 2rem;
     font-size: 1.5rem; 
     font-weight: 300;
@@ -577,7 +577,7 @@ footer {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .mainHeader {
-        background-image: url(/assets/DevPortFolioBG_2560.png);
+        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 500px;
     }
 
