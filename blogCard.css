@@ -54,3 +54,4 @@
 .blog-article:nth-child(odd)>.blog-row {
     flex-direction: row-reverse;
 }
+

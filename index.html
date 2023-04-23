@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
 
 <head>
@@ -33,17 +30,16 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#main-nav">
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
         <div class="container-xxl">
-            <a class="navbar-brand" href="#">
-                <img src="/assets/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png"
+            <a class="navbar-brand ms-lg-4 me-lg-1 border border-danger" href="#">
+                <img id="singleSemicolon" src="/assets/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png"
                     height="50">
+                <img class="ms-1" src="/Angel Single Semicolon Logo/Logo Files/For Web/svg/Color logo with background.svg"
+                    height="50" width="275">
             </a>
-            <!-- ToDo: Customize mobile hamburger menu button -->
+            <!-- custom mobile hamburger menu button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,7 +47,7 @@
                     <i class="bi bi-list"></i>
                 </span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ms-lg-1 me-lg-4 pe-lg-3 border border-danger" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -69,7 +65,7 @@
                         <a class="nav-link" href="#challenges">Challenges</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" target="_blank" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -81,16 +77,14 @@
     <header id="home" class="container-xxl">
         <div class="mainHeader">
             <div class="mainHeader-content d-flex flex-row-reverse">
-                <div class="mainHeader-wrapper">
+                <div class="mainHeader-wrapper border border-danger">
                     <div id="angelParent" class="mainTitle">
-                        <span id="angel" class="mainTitle">Angel</span>
+                        <span id="angel" class="mainTitle border border-warning">Angel</span>
                         <span id="semiColon-2">
-                            <img class="mainLogo"
-                                src="/assets/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png"
-                                class="mainLogo">
+                            <img class="mainLogo border border-success ms-5 me-0" src="/assets/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png" class="mainLogo">
                         </span>
                     </div>
-                    <div id="corral-nunez" class="mainTitle">Corral&nbsp;Nunez</div>
+                    <div id="corral-nunez" class="mainTitle border border-info">Corral&nbsp;Nunez</div>
                     <div id="dev" class="subTitle">Software Developer</div>
                     <a id="contact" href="#contact" class="btn btn-primary">CONTACT ME</a>
                 </div>
@@ -99,9 +93,9 @@
 
     <main class="container-xxl">
         <section id="about" class="sec-page">
-            <h2 class="display-4">About Me</h2>
-            <div class="row g-3">
-                <div class="col-12 col-lg-4">
+            <h2 class="display-4 ms-2 mb-lg-0">About Me</h2>
+            <div class="row g-3 m-auto">
+                <div class="col-12 col-lg-4 mb-3">
                     <picture id="prof-pic-angel">
                         <source media="(min-width: 992px)" srcset="/assets/Angel Corral Nunez/992x1065pxAngel_snowpic.jpg" />
                         <source media="(min-width: 768px)" srcset="/assets/Angel Corral Nunez/768x825pxAngel_snowpic.jpg" />
@@ -116,68 +110,68 @@
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Dignissim enim sit amet venenatis urna cursus eget nunc. Risus feugiat in ante metus. Velit
                     dignissim sodales ut eu sem integer vitae. Massa enim nec dui nunc. Eu lobortis elementum nibh
-                    tellus molestie nunc non. Pulvinar pellentesque habitant morbi tristique senectus et netus et.'</p>
+                    tellus molestie nunc non. Pulvinar pellentesque habitant morbi tristique senectus et netus et.</p>
                 <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col">Name: Angel Corral Nunez</div>
-                    <div class="col">Email: <a href="mailto:angelcorralnunez@gmail.com">angelcorralnunez@gmail.com</a>
-                    </div>
-                    <div class="col">From: Sacramento, CA</div>
+                    <h6 class="col my-2">Name: Angel Corral Nunez</h6>
+                    <h6 class="col my-2">Email: <a href="mailto:angelcorralnunez@gmail.com">angelcorralnunez@gmail.com</a></h6>
+                    <h6 class="col my-2">From: Sacramento, CA, USA</h6>
+                    <h6 class="col my-2">Residing in: Guadalajara, Jal, Mexico</h6>
                 </div>
-                <a href="#" class="btn btn-primary mt-3">Download Resume</a>
+                <a href="#" id="resume-btn" class="btn btn-primary mt-4 ms-2 w-75">Download Resume</a>
 
             </div>
         </section>
-        <section id="skills" class="sec-page">
-            <h2>My Toolbox</h2>
-            <p>I am a creative problem solver. I build full-stack web applications. I use C#, SQL, ASP.NET, JavaScript,
+        <section id="skills" class="sec-page m-auto">
+            <h2 class="mt-0 mb-3 ms-1">My Toolbox</h2>
+            <p class="mb-4">I am a creative problem solver. I build full-stack web applications. I use C#, SQL, ASP.NET, JavaScript,
                 Bootstrap, HTML, and CSS. I have highlighted my key technical skills that I will bring to your project.
                 Check out some of my <a href="#projects">full-stack projects</a> below! </a></p>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
                 <div class="col">
-                    <i class="devicon-csharp-plain colored"></i>
+                    <i class="devicon-csharp-plain colored" style="font-size: 2rem;"></i>
                     <p>I use C# daily to build full-stack web applications. You can see my projects where I utilized C#
-                        in my <a href="#projects">projects</a>section!</p>
+                        in my <a href="#projects">projects</a> section!</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <i class="devicon-dotnetcore-plain colored" style="font-size: 2rem;"></i>
                     <p>I use ASP.NET CORE Web and MVC frameworks daily to build full-stack web applications. You can see
-                        my projects where I utilized ASP.NET Core in my <a href="#projects">projects</a>section!</p>
+                        my projects where I utilized ASP.NET Core in my <a href="#projects">projects</a> section!</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
                     <p>I use Vanilla JS and am comfortable with many JS frameworks to build full-stack web applications.
-                        You can see my projects where I utilized JS in my <a href="#projects">projects</a>section!</p>
+                        You can see my projects where I utilized JS in my <a href="#projects">projects</a> section!</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-bootstrap-plain"></i>
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-bootstrap-plain colored" style="font-size: 2rem;"></i>
+                    <i class="devicon-html5-plain colored" style="font-size: 2rem;"></i>
+                    <i class="devicon-css3-plain colored" style="font-size: 2rem;"></i>
                     <p>I use these technologies daily to build full-stack web applications. You can see my projects
-                        where I utilized these technologies in my <a href="#projects">projects</a>section!</p>
+                        where I utilized these technologies in my <a href="#projects">projects</a> section!</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-original-wordmark colored"></i>
+                    <i class="devicon-git-plain colored" style="font-size: 2rem;"></i>
+                    <i class="devicon-github-original-wordmark colored" style="font-size: 2rem;"></i>
                     <p>I use these technologies daily to build full-stack web applications. You can see my projects
-                        where I utilized these technologies in my <a href="#projects">projects</a>section!</p>
+                        where I utilized these technologies in my <a href="#projects">projects</a> section!</p>
                 </div>
                 <div class="col">
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                    <i class="devicon-postgresql-plain-wordmark colored" style="font-size: 2rem;"></i>
                     <p>I use SQL to build full-stack web applications. You can see my projects where I utilized SQL in
-                        my <a href="#projects">projects</a>section!</p>
+                        my <a href="#projects">projects</a> section!</p>
                 </div>
             </div>
         </section>
-        <section id="projects" class="sec-page">
-            <h2>My Projects</h2>
-            <p>Showcasing complete functional projects demonstrates what I can bring to your project.
+        <section id="projects" class="sec-page m-auto">
+            <h2 class="ms-1 mt-0 mb-3">My Projects</h2>
+            <p class="mb-4">Showcasing complete functional projects demonstrates what I can bring to your project.
                 I built these projects from the ground up to demonstrate skills with front-end, back-end,
                 security, and database development. All these projects are full stack web projects that
                 are published so that you can demo them easily.</p>
             <a href="#contact">Contact Me</a> to get a complete code walk through.
-            <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
+            <div class="row row-cols-1 row-cols-md-2 gy-5 mt-1 ms-md-5 me-md-5">
                 <div class="col">
-                    <div class="hc-wrapper">
+                    <div class="hc-wrapper ps-md-5 mt-md-4">
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/assets/logos/BugTracker_600.jpg" media="(min-width: 992px)" />
@@ -196,7 +190,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="hc-wrapper">
+                    <div class="hc-wrapper pe-md-5 mt-md-4">
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/assets/logos/ExpenseTracker_600.jpg" media="(min-width: 992px)" />
@@ -215,7 +209,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="hc-wrapper">
+                    <div class="hc-wrapper ps-md-5 mt-md-4">
                         <div class="hc-card">
                             <picture>
                                 <source srcset="/assets/logos/Blog_600.jpg" media="(min-width: 992px)" />
@@ -233,10 +227,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="hc-wrapper pe-md-5 mt-md-4">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/assets/logos/ExpenseTracker_600.jpg" media="(min-width: 992px)" />
+                                <img src="/assets/logos/ExpenseTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    A full stack financial tracker app built with ASP.NET MVC, C#, and SQL.
+                                </p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#projectTwoModal">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="challenges" class="sec-page">
-            <h2>Smaller Projects</h2>
+            <h2 class="mt-md-1 ms-md-4 text-center">Smaller Projects in Javascript</h2>
             <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
                 <div class="col">
                     <div class="hc-wrapper">
@@ -315,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-md-2">
                     <div class="hc-wrapper">
                         <div class="hc-card">
                             <picture>
@@ -333,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <div class="hc-wrapper">
                         <div class="hc-card">
                             <picture>
@@ -352,20 +365,80 @@
                     </div>
                 </div>
             </div>
+            <h2 class="mt-5 ms-md-4 text-center">Smaller Projects in C#</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/assets/Display A Hundred.png" media="(min-width: 992px)" />
+                                <img src="/assets/Display A Hundred.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    Display a Hundred is a Javascript coding exercise using loops. 
+                                    It is a program that displays the numbers from 0 to 100. 
+                                    Then, displays the even numbers in a Bold Color. 
+                                    The program was built with Javascript, HTML5, CSS3, and Bootstrap.
+                                </p>
+                                <a href="https://display-a-hundred.netlify.app/index.html" target="_blank" type="button" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/taco.png" media="(min-width: 992px)" />
+                                <img src="/taco.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    Taco Cat is a fun Web App that uses Javascript logic to check if a phrase entered, like 'Taco Cat,' is a palindrome or not. It's built with Javascript, HTML5, CSS3, and Bootstrap.'
+                                </p>
+                                <a href="/https://my-pal-taco-cat.netlify.app/" target="_blank" type="button" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/Reverse.png" media="(min-width: 992px)" />
+                                <img src="/Reverse.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>
+                                    Reverse, Rewind is a Javascript Web App that rewinds a user entered phrase, then displays it in reverse built with Javascript, HTML5,CSS3, and Bootstrap.
+                                </p>
+                                <a href="/https://reverse-rewind.netlify.app/" target="_blank" type="button" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="sec-cta">
-            <a href="#" class="cta-arrow">
+            <a href="#" class="cta-arrow m-auto me-sm-5">
                 <i class="bi bi-arrow-right-square-fill"></i>
             </a>
             <span>Want to see my recent work?<br>
                 Check out my <a href="#">bug tracker</a>!</span>
-            <a href="#" class="cta-arrow">
+            <a href="#" class="cta-arrow m-auto ms-sm-5">
                 <i class="bi bi-arrow-left-square-fill"></i>
             </a>
         </section>
-        <section id="blog" class="sec-page">
-            <h2>What I Enjoy Talking About</h2>
-            <p>I am passionate about sharing what I have learned along my journey with others, check out my blog to
+        <section id="blog" class="sec-page m-auto">
+            <h2 class="ms-1 mt-0 mb-3">What I Enjoy Talking About</h2>
+            <p class="ms-1 mb-3">I am passionate about sharing what I have learned along my journey with others, check out my blog to
                 learn more.</p>
             <div id="blogs">
                 <article class="card mb-4 blog-article">
@@ -493,48 +566,48 @@
                 </article>
             </div>
         </section>
-        <section id="contact" class="sec-page">
-            <h2>How to Reach Me</h2>
+        <section id="contact" class="sec-page m-auto">
+            <h2 class="ms-1 mt-0 mb-3">How to Reach Me</h2>
             <div class="bg-light p-2 border-1 border border-info shadow-lg">
                 <form method="post" data-netlify="true" name="contact">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt-2">
                             <label for="firstName" class="form-label">First Name</label>
                             <input name="firstName" type="text" aria-label="First Name" 
                             placeholder="First Name" class="form-control" 
                             required />
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt-2">
                             <label for="lastName" class="form-label">Last Name</label>
                             <input name="lastName" type="text" aria-label="Last Name" 
                             placeholder="Last Name" class="form-control" 
                             required />
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt-2">
                             <label for="email" class="form-label">Email</label>
                             <input name="email" type="email" aria-label="Email" 
                             placeholder="Email" class="form-control"
                             required />
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt-2">
                             <label for="phone" class="form-label">Phone (optional)</label>
                             <input name="phone" type="tel" aria-label="Phone" 
                             placeholder="Phone" class="form-control" />
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mt-2">
                             <label for="subject" class="form-label">Subject</label>
                             <input name="subject" type="text" aria-label="Subject" 
                             placeholder="Subject" class="form-control" 
                             required />
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mt-2">
                             <label for="message" class="form-label">Message</label>
                             <textarea name="message" type="text" aria-label="Message" 
                             placeholder="Message" class="form-control" 
                             required rows="4" />
                             </textarea>
                         </div>
-                        <div class="text-end mt-2">
+                        <div class="text-end mt-3 mb-2">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
@@ -550,7 +623,8 @@
         <div class="col">
             <div class="container py-2 footer-cta text-center">
                 <h1 class="footer-message">Let's Work Together</h1>
-                <h4 class="footer-message">Need assistance with your project? Let's discuss how I can help.</h4>
+                <h4 class="col-12 ftr-cta-txt w-100 fs-5">Want to know how I can help you with your next project?</h4>
+                <h4 class="col-12 ftr-cta-txt w-100 fs-5">Let's chat.</h4>
             </div>
         </div>
     </div>
