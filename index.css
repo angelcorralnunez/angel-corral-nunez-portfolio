@@ -129,13 +129,12 @@ a {
     
 }
 
-#projectContact {
-    font-size: 1.33rem;
+#code-walkthrough-cta {
     font-weight: bold;
+    font-size: 1.25rem;
 }
 
 #project-walkthrough {
-    font-size: 1.5rem;
     color: black;
     text-shadow: rgba(0, 20, 255, 1) 1px 1px 1px;
     
@@ -299,6 +298,7 @@ a {
     height: 200px;
     margin-top: 76px;
     background-image: url(/assets/DevPortFolioBG_576.png);
+    box-shadow: 0 0 20px 20px rgba(41, 179, 173, 1) inset;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--acn-light-color);
