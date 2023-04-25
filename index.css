@@ -16,7 +16,7 @@ font-family: 'Roboto', sans-serif; */
 
      /* colors */
      --acn-primary-color: rgba(41, 179, 173, 1);
-     /* --acn-primary-color: rgba(41, 179, 173, 1); */
+     /* --acn-primary-color: rgba(7, 113, 135, 1); */
      --acn-secondary-color: rgba(61, 210, 204, 1);
      --acn-highlight-color: ;rgba(61, 210, 204, 1);
      --acn-dark-color: rgba(17, 17, 17, 1);
@@ -27,6 +27,7 @@ font-family: 'Roboto', sans-serif; */
      --acn-checklist-text-color: rgba(136, 136, 136, 1); 
      --acn-bootstrap-info-color: rgba(84, 180, 211, 1); 
      /* Bootstrap Info Hex code  #54B4D3*/
+     rgba(7, 113, 135, 1)
 
      /* nav bar colors */
      --acn-nav-bg-color: rgb(33, 33, 33, .8);
@@ -67,8 +68,7 @@ body {
     /*d-flex*/
     flex-direction: column;
     /*flex-column*/
-    background-color: var(--acn-primary-color);
-
+    background-color: var(--acn-light-color);
     font-family: var(--acn-body-font)!important;
     font-family: var(acn-font-size);
     font-family: var(acn-font-weight);
@@ -110,11 +110,16 @@ a {
     color: var(--acn-nav-link-glow); 
 }
 
+/* End Element Overrides */
+
+/* Begin Main Elements */
+
 #dev {
     color: var(--acn-background-color)!important;
 }
 
 #myName {
+    font-size: 2rem;
     color: black;
     text-shadow: 1px 1px 2px rgba(33, 248, 246, 1);
 }
@@ -131,14 +136,10 @@ a {
 
 #project-walkthrough {
     font-size: 1.5rem;
-    color: rgba(33, 248, 246, 1)!important;
-    text-shadow: 1px 1px 2px black;
+    color: black;
+    text-shadow: rgba(0, 20, 255, 1) 1px 1px 1px;
     
 }
-
-/* End Element Overrides */
-
-/* Begin Main Elements */
 
 .sec-page {
     padding-top: 5rem;
@@ -146,15 +147,25 @@ a {
 }
 .sec-page:nth-child(even) {
     background-color: var(--acn-background-color);
+    background: linear-gradient(to bottom,
+    rgba(84, 180, 211, 1) 0%,
+    var(--acn-background-color) 50%,
+    var(--acn-background-color) 50%,
+    var(--acn-primary-color) 100%);    
 }
 
 .sec-page:nth-child(even) h2 {
-    color: rgba(7, 113, 135, 1);
-    text-shadow: 1px 1px 2px black;
+    color: var(--acn-nav-link)!important;
+    text-shadow: 2px 2px 3px black;
 }
 
 .sec-page:nth-child(odd) {
     background-color: var(--acn-light-color);
+    background: linear-gradient(to bottom,
+    var(--acn-primary-color) 0%,
+    var(--acn-background-color) 50%,
+    var(--acn-background-color) 50%,
+    rgba(84, 180, 211, 1) 100%);
 }
 
 .sec-page:nth-child(odd) h2 {
@@ -184,6 +195,46 @@ a {
     border-radius: 20px;
     border: 1px solid;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#git-icon {
+    color: #df4b33;
+}
+
+#bootstrap-icon {
+    color: #7711f7;
+}
+
+#html-icon {
+    color: #f16529;
+}
+
+#css-icon {
+    color: #009ce6;
+}
+
+#js-icon {
+    color: #fa9c28;
+}
+
+#c-sharp-icon {
+    color: #8c50d7;
+}
+
+#dot-net-icon {
+    color: #782379;
+}
+
+#vscode-icon {
+    color: #0076bf;
+}
+
+#gimp-icon {
+    color: #575040;
+}
+
+#visualstudio-icon {
+    color: #6a1b99;
 }
 
 .sec-cta {
@@ -303,10 +354,10 @@ a {
 
 .btn-primary {
     border: 3px solid;
-    color: var(--acn-bootstrap-info-color);
+    color: var(--acn-nav-link);
     --bs-btn-bg: var(--acn-dark-color);
     --bs-btn-border-color: var(--acn-bootstrap-info-color);
-    --bs-btn-hover-bg: var(--acn-nav-toggler-glow);
+    --bs-btn-hover-bg: var(--acn-nav-link);
     --bs-btn-hover-border: var(--acn-nav-link-glow);
     --bs-btn-hover-color: var(--acn-nav-link-glow);
 }
@@ -322,6 +373,7 @@ a {
 
 #formBox {
     background-color: #e2e2e2!important;
+    border: 3px solid var(--acn-nav-link-glow);
     border-radius: 12px;
 }
 
@@ -354,7 +406,7 @@ footer {
 
 .footer-cta {
     background-color: var(--acn-nav-link);
-    border: 6px solid var(--acn-nav-link-glow);
+    border: 4px solid var(--acn-nav-link-glow);
     border-radius: 10px;
     width: 85%;
 }
