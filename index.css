@@ -155,12 +155,7 @@ a {
     padding-bottom: 5rem;
 }
 .sec-page:nth-child(even) {
-    background-color: var(--acn-background-color);
-    background: linear-gradient(to bottom,
-    rgba(20, 174, 204, 1) 0%,
-    var(--acn-background-color) 50%,
-    var(--acn-background-color) 50%,
-    var(--acn-primary-color) 100%);    
+    background-color: var(--acn-background-color);  
 }
 
 .sec-page:nth-child(even) h2 {
@@ -170,11 +165,6 @@ a {
 
 .sec-page:nth-child(odd) {
     background-color: var(--acn-light-color);
-    background: linear-gradient(to bottom,
-    var(--acn-primary-color) 0%,
-    var(--acn-background-color) 50%,
-    var(--acn-background-color) 50%,
-    rgba(20, 174, 204, 1) 100%);
 }
 
 .sec-page:nth-child(odd) h2 {
@@ -312,7 +302,7 @@ a {
     height: 200px;
     margin-top: 76px;
     background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
-    box-shadow: 0 0 24px 24px rgba(41, 179, 173, 1) inset;
+    box-shadow: 0 0 24px 24px var(--acn-light-color) inset;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--acn-light-color);
@@ -430,9 +420,8 @@ footer {
 }
 
 .footer-bg-cta {
-    /* linear gradient last 2 colors must match footer-main bg color */
     background: linear-gradient(to bottom,
-    rgba(20, 174, 204, 1) 0%,
+    var(--acn-primary-color) 0%,
     var(--acn-background-color) 50%,
     var(--acn-background-color) 50%,
     var(--acn-dark-color) 100%);    
