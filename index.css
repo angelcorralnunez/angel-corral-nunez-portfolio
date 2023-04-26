@@ -27,7 +27,9 @@ font-family: 'Roboto', sans-serif; */
      --acn-checklist-text-color: rgba(136, 136, 136, 1); 
      --acn-bootstrap-info-color: rgba(84, 180, 211, 1); 
      /* Bootstrap Info Hex code  #54B4D3*/
-     rgba(7, 113, 135, 1)
+     /* rgba(7, 113, 135, 1) */
+     /* rgba(20, 174, 204, 1) */
+     /* rgba(102, 220, 215, 1) */
 
      /* nav bar colors */
      --acn-nav-bg-color: rgb(33, 33, 33, .8);
@@ -68,7 +70,7 @@ body {
     /*d-flex*/
     flex-direction: column;
     /*flex-column*/
-    background-color: var(--acn-light-color);
+    background-color: var(--acn-dark-color);
     font-family: var(--acn-body-font)!important;
     font-family: var(acn-font-size);
     font-family: var(acn-font-weight);
@@ -119,25 +121,32 @@ a {
 }
 
 #myName {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     text-shadow: 1px 1px 2px rgba(33, 248, 246, 1);
 }
 
-#bugTrackerlink {
-    color: var(--acn-nav-link); 
-    
-}
-
-#code-walkthrough-cta {
-    font-weight: bold;
+#myRole {
     font-size: 1.25rem;
 }
 
-#project-walkthrough {
+.heroSubtitles {
+    font-size: 1rem;
     color: black;
-    text-shadow: rgba(0, 20, 255, 1) 1px 1px 1px;
-    
+    text-shadow: 2px 2px 3px var(--acn-light-color);
+}
+
+#bugTrackerlink {
+    color: var(--acn-nav-link); 
+}
+
+#bugTrackerlink:hover {
+    color: rgba(255, 79, 219, 1);
+    transition: .4s;
+}
+
+#code-walkthrough-cta a {
+    color: rgba(216, 39, 45, 1);
 }
 
 .sec-page {
@@ -147,7 +156,7 @@ a {
 .sec-page:nth-child(even) {
     background-color: var(--acn-background-color);
     background: linear-gradient(to bottom,
-    rgba(84, 180, 211, 1) 0%,
+    rgba(20, 174, 204, 1) 0%,
     var(--acn-background-color) 50%,
     var(--acn-background-color) 50%,
     var(--acn-primary-color) 100%);    
@@ -164,7 +173,7 @@ a {
     var(--acn-primary-color) 0%,
     var(--acn-background-color) 50%,
     var(--acn-background-color) 50%,
-    rgba(84, 180, 211, 1) 100%);
+    rgba(20, 174, 204, 1) 100%);
 }
 
 .sec-page:nth-child(odd) h2 {
@@ -181,13 +190,17 @@ a {
     background-color: var(--acn-light-color);
 }
 
+.sec-page:nth-last-child(2) h2.card-title {
+    color: rgba(20, 174, 204, 1)!important;
+    text-shadow: 1px 1px 2px black;
+}
 .sec-page:last-child {
     background-color: var(--acn-background-color);
 }
 
 .sec-page:last-child h2 {
-    color: rgba(0, 20, 255, 1)!important;
-    text-shadow: 1px 1px 2px black!important;
+    color: black!important;
+    text-shadow: 1px 1px 2px rgba(33, 248, 246, 1)!important;
 }
 
 .profile-pic {
@@ -255,12 +268,12 @@ a {
 }
 
 .cta-arrow {
-    color: var(--acn-highlight-color);
+    color: rgba(193, 0, 254, 1);
     font-size: 2rem;
 }
 
 .cta-arrow:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.5);
     transition: .4s;
 }
 
@@ -297,8 +310,8 @@ a {
 .mainHeader {
     height: 200px;
     margin-top: 76px;
-    background-image: url(/assets/DevPortFolioBG_576.png);
-    box-shadow: 0 0 20px 20px rgba(41, 179, 173, 1) inset;
+    background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
+    box-shadow: 0 0 24px 24px rgba(41, 179, 173, 1) inset;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--acn-light-color);
@@ -325,7 +338,6 @@ a {
 
 .mainTitle, 
 .subTitle {
-    /* color: var(--acn-dark-color); */
     color: #FFFFFF!important;
 }
 
@@ -362,18 +374,9 @@ a {
     --bs-btn-hover-color: var(--acn-nav-link-glow);
 }
 
-.sec-page:nth-last-child(2) h2.card-title {
-    color: var(--acn-bootstrap-info-color)!important;
-    text-shadow: 1px 1px 2px black;
-}
-
-.bi-arrows {
-    color: var(--acn-nav-link-glow);
-}
-
 #formBox {
-    background-color: #e2e2e2!important;
-    border: 3px solid var(--acn-nav-link-glow);
+    background-color: var(--acn-background-color)!important;
+    border: 3px solid var(--acn-nav-link);
     border-radius: 12px;
 }
 
@@ -406,7 +409,7 @@ footer {
 
 .footer-cta {
     background-color: var(--acn-nav-link);
-    border: 4px solid var(--acn-nav-link-glow);
+    border: 3px solid var(--acn-nav-link-glow);
     border-radius: 10px;
     width: 85%;
 }
@@ -428,7 +431,7 @@ footer {
 .footer-bg-cta {
     /* linear gradient last 2 colors must match footer-main bg color */
     background: linear-gradient(to bottom,
-    var(--acn-primary-color) 0%,
+    rgba(20, 174, 204, 1) 0%,
     var(--acn-background-color) 50%,
     var(--acn-background-color) 50%,
     var(--acn-dark-color) 100%);    
@@ -446,7 +449,7 @@ footer {
     }
      
     .mainHeader {
-        background-image: url(/assets/DevPortFolioBG_576.png);
+        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 300px;
     }
 
@@ -506,18 +509,13 @@ footer {
         padding: 0;
         text-align: left;
     }
-
-    #contact {
-        /* margin: 15px 0 0 0; */
-    }
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
     .mainHeader {
-        background-image: url(/assets/DevPortFolioBG_767.png);
+        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
     }
 
@@ -590,6 +588,14 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+    #myName {
+        font-size: 1.75rem;
+    }
+    
+    #myRole {
+        font-size: 1.5rem;
+    }
+
     #prof-pic-angel {
         display: flex;
         justify-content: center; 
@@ -597,7 +603,7 @@ footer {
 
 
     .mainHeader {
-        background-image: url(/assets/DevPortFolioBG_992.png);
+        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
     }
 
@@ -678,12 +684,20 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+    #myName {
+        font-size: 2rem;
+    }
+    
+    #myRole {
+        font-size: 1.75rem;
+    }
+
     #prof-pic-angel {
         margin-left: 1rem;
     }
 
     .mainHeader {
-        background-image: url(/assets/DevPortFolioBG_1200.png);
+        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
         font-size: 4rem;
         line-height: 4.5rem;
@@ -742,6 +756,15 @@ footer {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    #myName {
+        font-size: 2rem;
+    }
+    
+    #myRole {
+        font-size: 2rem;
+    }
+
     .mainHeader {
         background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 500px;
