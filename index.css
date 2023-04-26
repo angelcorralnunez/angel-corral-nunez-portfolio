@@ -32,7 +32,8 @@ font-family: 'Roboto', sans-serif; */
      /* rgba(102, 220, 215, 1) */
 
      /* nav bar colors */
-     --acn-nav-bg-color: rgb(33, 33, 33, .8);
+     /* --acn-nav-bg-color: rgb(33, 33, 33, .8); */
+     --acn-nav-bg-color: rgba(17, 17, 17, 1);
      --acn-nav-toggler-color: var(--acn-highlight-color);
      --acn-nav-toggler-glow: rgba(33, 248, 246, 1);
      --acn-nav-link: rgba(33, 248, 246, 1);
@@ -580,8 +581,8 @@ footer {
         text-align: left;
     }
 
-    #contact {
-        /* margin: 15px 0 0 0; */
+    #resumeBtn {
+        width: 50%!important;
     }
 }
 
@@ -676,8 +677,8 @@ footer {
         width: 33.33%!important;
     }
 
-    #contact {
-        /* margin: 15px 0 0 0; */
+    .footer-cta {
+        width: 50%;
     }
 }
 
@@ -853,6 +854,9 @@ footer {
         margin-left: 1.5rem;
     }
 
+    .footer-cta {
+        width: 33.333%;
+    }
 }
 /* End: Media Queries */
 
