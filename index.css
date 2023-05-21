@@ -29,7 +29,7 @@
 
      /* text styles */
      --acn-title-color: var(--acn--dark-color);
-     --acn-font-size: 1.2rem;
+     --acn-font-size: 1.25rem;
      --acn-font-weight: 400;
      --acn-line-height: 1.5rem;
 }
@@ -83,6 +83,10 @@ h1, .h1 {
     letter-spacing: .1rem;
 }
 
+p {
+    font-size: var(--acn-font-size);
+}
+
 a {
     color: var(--acn-nav-link-glow); 
 }
@@ -100,6 +104,14 @@ a {
 #mainNav {
     background: var(--acn-nav-bg-color);
     width: 100vw!important;
+}
+
+.skip-link {
+    color: rgba(255, 79, 219, 1) !important;
+}
+
+.skip-link:hover {
+    color: var(--acn-nav-link) !important;
 }
 
 .nav-item .nav-link {
@@ -127,12 +139,12 @@ a {
     background-color: var(--acn-light-color);  
 }
 
-.sec-page:is(:nth-child(1),:nth-child(4),:nth-child(6)) h2 {
+.sec-page:is(:nth-child(1),:nth-child(4),:nth-child(6)) h3 {
     color: var(--acn-nav-link)!important;
     text-shadow: 2px 2px 3px black;
 }
 
-.sec-page:is(:nth-child(3),:nth-child(5)) h2 {
+.sec-page:is(:nth-child(3),:nth-child(5)) h3 {
     color: black!important;
     text-shadow: 1px 1px 2px rgba(33, 248, 246, 1)!important;
 }
@@ -254,14 +266,24 @@ a {
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-#myName {
+h4 #myName {
     font-size: 1.5rem;
     color: black;
     text-shadow: 1px 1px 2px rgba(33, 248, 246, 1);
 }
 
-#myRole {
-    font-size: 1.25rem;
+h4 #myRole {
+    font-size: 1.35rem;
+}
+
+.aboutSubtitles {
+    text-shadow: 2px 2px 3px var(--acn-light-color);
+    margin-top: -2%;
+    font-size: var(--acn-font-size);
+}
+
+h5 {
+    font-size: 1.05rem;
 }
 
 #eventPlannerlink {
@@ -502,6 +524,18 @@ footer {
     #resumeBtn {
         width: 50%!important;
     }
+
+    h4 #myName {
+        font-size: 2rem;
+    }
+    
+    h4 #myRole {
+        font-size: 1.75rem;
+    }
+
+    .br-visibility {
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -567,12 +601,12 @@ footer {
         font-size: 1.75rem;
     }
 
-    #myName {
-        font-size: 1.75rem;
+    h4 #myName {
+        font-size: 2.25rem;
     }
     
-    #myRole {
-        font-size: 1.5rem;
+    h4 #myRole {
+        font-size: 2rem;
     }
 
     #prof-pic-angel {
@@ -656,12 +690,12 @@ footer {
         margin: -2% 0 3% 0;
     }
 
-    #myName {
-        font-size: 2rem;
+    h4 #myName {
+        font-size: 2.5rem;
     }
     
-    #myRole {
-        font-size: 1.75rem;
+    h4 #myRole {
+        font-size: 2.25rem;
     }
 
     #prof-pic-angel {
@@ -742,12 +776,12 @@ footer {
         margin: 0 0 4% 0;
     }
 
-    #myName {
-        font-size: 2rem;
+    h4 #myName {
+        font-size: 2.75rem;
     }
     
-    #myRole {
-        font-size: 2rem;
+    h4 #myRole {
+        font-size: 2.5rem;
     }
 
     .sec-cta {
@@ -766,6 +800,14 @@ footer {
 
     #prof-pic-angel {
         margin-left: 1.5rem;
+    }
+
+    h4 #myName {
+        font-size: 3rem;
+    }
+    
+    h4 #myRole {
+        font-size: 2.75rem;
     }
 
     .footer-cta {
