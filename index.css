@@ -132,9 +132,8 @@ a {
 }
 
 .heroSubtitles {
-    font-size: 1rem;
-    color: black;
     text-shadow: 2px 2px 3px var(--acn-light-color);
+    margin-top: 0;
 }
 
 #eventPlannerlink {
@@ -311,12 +310,11 @@ a {
 
 /* Start: Main Header */
 .mainHeader-wrapper {
-    border: 2px solid red;
     text-align: left!important;
     width: 100%;
-    margin-top: 0;
-    margin-left: 2rem!important;
-    height: 100%;
+    height: 90%;
+    margin-left: -2%!important;
+    padding-left:4%;
 }
 
 .mainHeader {
@@ -354,17 +352,15 @@ a {
 }
 
 .mainTitle {
+    width: 80%;
     font-family: var(--acn-title-font);
-    font-size: 2.5rem!important;
-    line-height: 1rem!important;
 }
 
 .subTitle {
-    font-family: var(--acn-subtitle-font); 
-    font-size: 1.5rem!important;
-    line-height: 0.5rem!important; 
+    font-family: var(--acn-subtitle-font);  
     font-weight: 300;
-    letter-spacing: .09rem;
+    letter-spacing: .05rem;
+    margin: -1% 0 4% 0;
 }
 
 .mainHeader-content {
@@ -372,9 +368,8 @@ a {
     flex-direction: column !important;
     height: 100%;
     justify-content: left;
-    text-align: center;
-    display: flex ;
-    align-items: center;
+    margin: auto;
+    padding-left: 10%;
 }
 
 /* End: Main Header */
@@ -467,60 +462,56 @@ footer {
         height: 300px;
     }
 
-    .mainTitle {
-        font-size: 2.5 rem;
-        line-height: 1.5 rem;
-    } 
-
     .subTitle {
         font-size: 1.2 rem;
         line-height: .1 rem;
-    }
-
-    .mainHeader-wrapper {
-        margin-left: 0px;
-        margin-bottom: .5rem;
-        padding-top: 3rem;
     }
 
     #angelParent {
         display: grid;
         grid-template-columns: 25% 75%;
         margin-bottom: .25rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     
     #angel {
         display: grid;
         width: 100%;
         height: 3rem;
-        padding-top: 1.25rem;
+        margin-top: 0.25rem;
+        padding-top: 1.5rem;
+        padding-bottom: -4%;
+        font-size: 2rem;
+        line-height: 0.25rem;
     }
     
     #semiColon-2 {
-        font-size: 1rem!important;
-        margin: auto;
-        width: 50%;
-        margin-left: 2.5rem;
-        margin-top: 5px;
+        height: 70%;
+        width: 20%;
+        font-size: 2rem!important;
+        margin: 2% 5% 0 12%!important;
+        padding: 0 30% 0 0!important;
     }
 
     .mainLogo {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.75rem;
+        width: 2.5rem;
+        margin: 0!important;
+        padding-left: 4%!important;
     }
 
     #corral-nunez {
-        height: 3rem;
-        padding-top: .75rem;
+        height: 2rem;
+        font-size: 2rem;
+        line-height: 0.5rem;
+        margin: 5% 0 -2% 0; 
     }
 
     .dev {
         font-family: var(--acn-subtitle-font); 
-        font-size: 1.25rem; 
+        font-size: 1.5rem; 
         font-weight: 500;
         letter-spacing: .025rem;
-        margin: 10px 0 0 0;
         padding: 0;
         text-align: left;
     }
@@ -532,68 +523,6 @@ footer {
     .mainHeader {
         background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
-    }
-
-    .mainTitle {
-        font-size: 4.5 rem;
-        line-height: 3.5 rem;
-    } 
-
-    .subTitle {
-        font-size: 1.2 rem;
-        line-height: .1 rem;
-    }
-
-    .mainHeader-wrapper {
-        width: 40%;
-        margin-left: 0px;
-        margin-bottom: .5rem;
-        padding-top: 2.75rem;
-        padding-left: 2rem;
-    }
-
-    #angelParent {
-        display: grid;
-        grid-template-columns: 25% 75%;
-        margin-bottom: .25rem;
-        margin-top: 2rem;
-    }
-    
-    #angel {
-        display: grid;
-        width: 100%;
-        height: 3rem;
-        padding-top: 1.25rem;
-    }
-    
-    #semiColon-2 {
-        width: 100%;
-        height: 3rem;
-        width: 3rem;
-        margin-left: 2.25rem;
-        margin-top: .5rem;
-        padding-left: .25rem;
-        padding-top: .25rem;
-    }
-
-    .mainLogo {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-    #corral-nunez {
-        height: 3rem;
-        padding-top: .75rem;
-    }
-
-    .dev {
-        font-family: var(--acn-subtitle-font); 
-        font-size: 1.25rem; 
-        font-weight: 500;
-        letter-spacing: .025rem;
-        margin: 10px 0 0 0;
-        padding: 0;
-        text-align: left;
     }
 
     #resumeBtn {
@@ -617,20 +546,30 @@ footer {
         justify-content: center; 
     }
 
-
-    .mainHeader {
-        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
-        height: 400px;
+    .mainHeader-wrapper {
+        text-align: left!important;
+        width: 100%;
+        height: 90%;
+        margin-top: 10%;
+        margin-left: -2%!important;
+        padding-left: 15%;
     }
 
-    .mainTitle {
-        font-size: 4.5 rem;
-        line-height: 3.5 rem;
-    } 
+    .mainHeader-content {
+        border: 2px solid red;
+        margin: 0 0 0 40%;
+        padding-left: 8%;
+    }
 
-    .subTitle {
-        font-size: 1.2 rem;
-        line-height: .1 rem;
+    .mainHeader-wrapper {
+        border: 2px solid lime;
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .mainHeader {
+        background-image: url(/assets/2-rev-2369x783px-bg-laptop-colorful.jpg);
+        height: 400px;
     }
 
     .sec-cta {
@@ -651,19 +590,22 @@ footer {
     }
     
     #angel {
+        border: 2px solid fuchsia;
         display: grid;
-        width: 100%;
+        width: 150%;
         height: 3rem;
         margin-right: 0;
         margin-bottom: 0;
-        padding-top: 1.5rem;
+        font-size:2.5rem;
+        line-height: 2.5rem;
     }
     
     #semiColon-2 {
-        margin: auto;
-        width: 100%;
-        margin-left: 40px;
-        margin-top: 5px;
+        border: 2px solid aqua;
+        margin: 0 20% 15% 20%;
+        width: 25%;
+        padding-right: 50%;
+        padding-left: -10%;
     }
 
     .mainLogo {
@@ -674,8 +616,10 @@ footer {
     }
 
     #corral-nunez {
+        border: 2px solid blue;
         height: 3rem;
-        padding-top: 1rem;
+        font-size:2.5rem;
+        line-height: 2.5rem;
     }
 
     .dev {
