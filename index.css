@@ -175,6 +175,45 @@ a {
     width: 80%;
     font-family: var(--acn-title-font);
 }
+ 
+#angelParent {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-bottom: .25rem;
+    margin-top: 1.5rem;
+}
+
+#angel {
+    display: grid;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.25rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 0.5rem;
+}
+
+#semiColon-2 {
+    height: 70%;
+    width: 20%;
+    font-size: 1.85rem;
+    margin: 4% 5% 0 11%!important;
+    padding: 0 30% 0 0!important;
+}
+
+.mainLogo {
+    height: 1.75rem;
+    width: 2.25rem;
+    margin: 0!important;
+    padding-left: 2%!important;
+}
+
+#corral-nunez {
+    height: 2rem;
+    font-size: 2rem;
+    line-height: 0.5rem;
+    margin: 4% 0 -2% 0; 
+}
 
 .heroSubtitles {
     text-shadow: 2px 2px 3px var(--acn-light-color);
@@ -196,47 +235,7 @@ a {
     font-family: var(--acn-subtitle-font); 
     font-weight: 500;
     letter-spacing: .025rem;
-    padding: 0;
     text-align: left;
-}
- 
-#angelParent {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    margin-bottom: .25rem;
-    margin-top: 1.5rem;
-}
-
-#angel {
-    display: grid;
-    width: 100%;
-    height: 3rem;
-    margin-top: 0.25rem;
-    padding-top: 1.5rem;
-    font-size: 1.85rem;
-    line-height: 0.25rem;
-}
-
-#semiColon-2 {
-    height: 70%;
-    width: 20%;
-    font-size: 1.85rem;
-    margin: 3% 5% 0 12%!important;
-    padding: 0 30% 0 0!important;
-}
-
-.mainLogo {
-    height: 1.75rem;
-    width: 2.5rem;
-    margin: 0!important;
-    padding-left: 4%!important;
-}
-
-#corral-nunez {
-    height: 2rem;
-    font-size: 2rem;
-    line-height: 0.5rem;
-    margin: 4% 0 -2% 0; 
 }
 
 .btn-primary {
@@ -451,7 +450,6 @@ footer {
 /* Start: Media Queries */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
     .mainHeader {
         background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
@@ -472,16 +470,56 @@ footer {
 
     .mainHeader-content {
         margin: 0 0 0 40%;
-        padding-left: 8%;
+        padding-left: 6%;
     }
 
     .mainHeader-wrapper {
-        text-align: left!important;
-        width: 100%;
-        height: 90%;
-        margin-top: 10%;
-        margin-left: -2%!important;
+        margin-top: 1%;
+        margin-left: 4%!important;
         padding-left: 15%;
+    }
+
+    #angelParent {
+        grid-template-columns: 35% 65%;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        max-height: 3rem;
+    }
+    
+    #angel {
+        width: 150%;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 0.25rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    #semiColon-2 {
+        font-size: 1.5rem;
+        padding-left: 8%!important;
+    }
+
+    .mainLogo {
+        height: 3rem;
+        width: 3.5rem;
+    }
+
+    #corral-nunez {
+        height: 3rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .heroSubtitles {
+        text-shadow: 2px 2px 3px var(--acn-light-color);
+        margin: 4% 0 0 0;
+        font-size: 1.75rem;
+    }
+
+    .subTitle {
+        margin: 0 0 5% 0;
+        font-size: 1.75rem;
     }
 
     #myName {
@@ -506,63 +544,6 @@ footer {
         font-size: 2.5rem;
     }
 
-    #angelParent {
-        display: grid;
-        grid-template-columns: 25% 75%;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        max-height: 3rem;
-    }
-    
-    #angel {
-        display: grid;
-        width: 150%;
-        height: 3rem;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding-top: 0.25rem;
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    
-    #semiColon-2 {
-        height: 70%;
-        width: 25%;
-        font-size: 0.5rem!important;
-        margin: 0 40% 18% 0%;
-        padding-right: 0%;
-        padding-left: 6%;
-    }
-
-    .mainLogo {
-        display: grid;
-        columns: 1fr;
-        height: 50px;
-        width: 50px;
-    }
-
-    #corral-nunez {
-        height: 3rem;
-        font-size: 3rem;
-        line-height: 3rem;
-        padding-top: 0.5rem;
-    }
-
-    .heroSubtitles {
-        text-shadow: 2px 2px 3px var(--acn-light-color);
-        
-    }
-
-    .dev {
-        font-family: var(--acn-subtitle-font); 
-        font-size: 1.25rem; 
-        font-weight: 500;
-        letter-spacing: .025rem;
-        margin: 10px 0 0 0;
-        padding: 0;
-        text-align: left;
-    }
-
     #a11y-row {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -578,61 +559,56 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
     .mainHeader {
-        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
+        margin-top: 0;
+        background-image: url(/assets/4-rev-2369x783px-half-bg-laptop-colorful.jpg);
         height: 400px;
-        font-size: 4rem;
-        line-height: 4.5rem;
+    }
+
+    .mainHeader-content {
+        margin: 7% 0 0 50%;
+    }
+
+    .mainHeader-wrapper {
+        margin-top: 0;
+        padding-left: 8%;
     }
 
     #angelParent {
-        display: grid;
         grid-template-columns: 25% 75%;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        max-height: 3rem;
     }
     
     #angel {
-        font-size: 2rem;
-        display: grid;
+        font-size: 3.5rem;
         width: 100%;
-        height: 3rem;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding-top: 1.5rem;
+        padding-top: 1.8rem;
     }
     
     #semiColon-2 {
-        font-size: 1rem;
-        margin: auto;
-        width: 100%;
-        margin-left: 30px;
-        margin-top: 5px;
+        width: 22%;
+        margin-left: 24%!important;
+        margin-top: 12%!important;
     }
 
     .mainLogo {
-        display: grid;
-        columns: 1fr;
-        height: 50px;
-        width: 50px;
+        height: 3.25rem;
+        width: 3.75rem;
     }
 
     #corral-nunez {
-        font-size: 2rem;
-        height: 3rem;
-        padding-top: 1rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        padding-top: 1.75rem;
     }
 
-    .dev {
-        font-family: var(--acn-subtitle-font); 
-        font-size: 1.5rem; 
-        font-weight: 500;
-        letter-spacing: .025rem;
-        margin: 15px 0 0 0;
-        padding: 0;
-        text-align: left;
+    .heroSubtitles {
+        font-size: 1.75rem;
+        margin: 12% 0 0 0;
+    }
+
+    .subTitle {
+        font-size: 1.75rem;
+        margin: 0 0 5% 0;
     }
 
     #myName {
@@ -658,27 +634,75 @@ footer {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
     .mainHeader {
         background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
         height: 500px;
     }
 
+    .mainHeader-content {
+        margin: 6% 0 0 50%;
+        padding-left: 8%;
+    }
+
     .mainHeader-wrapper {
-        height: 500px;
-        margin-left: 0;
-        margin-top: 2rem;
-        padding-top: 5rem;
+        margin-left: -6%!important;
+        margin-top: 5%!important;
+        margin-bottom: 10%!important;
+        padding-top: 2%!important;
+        padding-bottom: 10%!important;
     }
     
-    .mainTitle {
-        font-size: 5rem;
-        line-height: 4rem;
+    #angelParent {
+        grid-template-columns: 20% 80%;
+    }
+    
+    #angel {
+        font-size: 4rem;
+        width: 235%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 15%;
+        padding-top: 17%;
+    }
+
+    #semiColon-2 {
+        height: 100%;
+        margin-left: 28%!important;
+        margin-top: 0!important;
+        padding: 0 -5%!important;
+    }
+    
+    .mainLogo {
+        height: 4rem;
+        width: 4.5rem;
+    }
+
+    #corral-nunez {
+        font-size: 4rem;
+        width: 25rem;
+        height: 4rem;
+        margin-left: 0;
+        margin-top: 7%;
+        padding-top: 0;
+    }
+
+    .heroSubtitles {
+        font-size: 2.5rem;
+        margin: 5% 0 0 0;
     }
 
     .subTitle {
-        font-size: 1rem;
-        line-height: .12rem;
+        font-size: 2.5rem;
+        margin: 0 0 5% 0;
+    }
+
+    #myName {
+        font-size: 2rem;
+    }
+    
+    #myRole {
+        font-size: 2rem;
     }
 
     .sec-cta {
@@ -689,58 +713,6 @@ footer {
 
     .cta-arrow {
         font-size: 4rem;
-    }
-    
-    #angelParent {
-        width: 20rem;
-        height: 15rem;
-        margin-top: 0;
-        padding-top: 0;
-    }
-    
-    #angel {
-        font-size: 2rem;
-        width: 10rem;
-        height: 1.5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-right: 0;
-        padding-top: 0;
-    }
-
-    #semiColon-2 {
-        height: 1.5rem;
-        width: 1.5rem;
-        margin-left: 5rem;
-        margin-top: -.5rem;
-        padding-left: .25rem;
-        padding-top: 0;
-    }
-    
-    .mainLogo {
-        height: 4.5rem;
-        width: 4.5rem;
-    }
-
-    #corral-nunez {
-        width: 25rem;
-        height: 4rem;
-        margin-left: 0;
-        margin-top: 2rem;
-        padding-top: 0;
-    }
-    
-    .dev {
-        padding: 16px 8px 20px lid;;
-        font-size: 2rem; 
-    }
-
-    #myName {
-        font-size: 2rem;
-    }
-    
-    #myRole {
-        font-size: 2rem;
     }
 
 }
