@@ -142,7 +142,7 @@ a {
 .mainHeader {
     height: 300px;
     margin-top: 76px;
-    background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
+    background-image: url(/assets/6-rev-2369x783px-half-bg-laptop-colorful.jpg);
     box-shadow: 0 0 24px 24px var(--acn-background-color) inset;
     background-repeat: no-repeat;
     background-position: right top;
@@ -186,7 +186,7 @@ a {
 #angel {
     display: grid;
     width: 100%;
-    height: 3rem;
+    height: 100%;
     margin-top: 0.25rem;
     padding-top: 1.5rem;
     font-size: 2rem;
@@ -451,8 +451,52 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .mainHeader {
-        background-image: url(/assets/rev-2369x783px-bg-laptop-colorful.jpg);
+        background-image: url(/assets/2-rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
+    }
+
+    .mainHeader-content {
+        margin: 10% 0 0 33%;
+        padding: 3% 0 0 6%;
+    }
+    
+    #angel {
+        width: 150%;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-top: 25%;
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+    
+    #semiColon-2 {
+        font-size: 1.5rem;
+        margin: 8% 0 0 4%!important;
+        padding: 0 15% 0 0!important;
+    }
+
+    .mainLogo {
+        height: 2.25rem;
+        width: 2.75rem;
+    }
+
+    #corral-nunez {
+        height: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 2rem;
+        margin: 2% 0 0 0;
+    }
+
+    .heroSubtitles {
+        text-shadow: 2px 2px 3px var(--acn-light-color);
+        margin: 0;
+        font-size: 1.55rem;
+    }
+
+    .subTitle {
+        margin: -1% 0 4% 0;
+        font-size: 1.55rem;
     }
 
     #resumeBtn {
@@ -462,7 +506,6 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
     .mainHeader {
         background-image: url(/assets/2-rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
@@ -474,9 +517,9 @@ footer {
     }
 
     .mainHeader-wrapper {
-        margin-top: 1%;
-        margin-left: 4%!important;
-        padding-left: 15%;
+        margin-top: -1%;
+        margin-left: 6%!important;
+        padding-left: 3%;
     }
 
     #angelParent {
@@ -490,14 +533,15 @@ footer {
         width: 150%;
         margin-right: 0;
         margin-bottom: 0;
-        padding-top: 0.25rem;
+        padding-top: 10%;
         font-size: 3rem;
         line-height: 3rem;
     }
     
     #semiColon-2 {
         font-size: 1.5rem;
-        padding-left: 8%!important;
+        padding: 5% 0 5% 5%!important;
+        margin: 0!important;
     }
 
     .mainLogo {
@@ -509,11 +553,12 @@ footer {
         height: 3rem;
         font-size: 3rem;
         line-height: 3rem;
+        margin: 5% 0 0 0;
     }
 
     .heroSubtitles {
         text-shadow: 2px 2px 3px var(--acn-light-color);
-        margin: 4% 0 0 0;
+        margin: 2% 0 0 0;
         font-size: 1.75rem;
     }
 
@@ -561,16 +606,16 @@ footer {
 @media (min-width: 992px) {
     .mainHeader {
         margin-top: 0;
-        background-image: url(/assets/4-rev-2369x783px-half-bg-laptop-colorful.jpg);
+        background-image: url(/assets/6-rev-2369x783px-half-bg-laptop-colorful.jpg);
         height: 400px;
     }
 
     .mainHeader-content {
-        margin: 7% 0 0 50%;
+        margin: 7% 0 0 40%;
     }
 
     .mainHeader-wrapper {
-        margin-top: 0;
+        margin-top: 1%;
         padding-left: 8%;
     }
 
@@ -581,13 +626,13 @@ footer {
     #angel {
         font-size: 3.5rem;
         width: 100%;
-        padding-top: 1.8rem;
+        margin-top: -20%;
     }
     
     #semiColon-2 {
         width: 22%;
-        margin-left: 24%!important;
-        margin-top: 12%!important;
+        margin-left: 10%!important;
+        margin-top: -10%!important;
     }
 
     .mainLogo {
@@ -598,17 +643,17 @@ footer {
     #corral-nunez {
         font-size: 3.5rem;
         line-height: 3.5rem;
-        padding-top: 1.75rem;
+        margin-top: -2%;
     }
 
     .heroSubtitles {
-        font-size: 1.75rem;
-        margin: 12% 0 0 0;
+        font-size: 2.25rem;
+        margin: 2% 0 0 0;
     }
 
     .subTitle {
-        font-size: 1.75rem;
-        margin: 0 0 5% 0;
+        font-size: 2.25rem;
+        margin: -2% 0 3% 0;
     }
 
     #myName {
@@ -646,7 +691,7 @@ footer {
 
     .mainHeader-wrapper {
         margin-left: -6%!important;
-        margin-top: 5%!important;
+        margin-top: -5%!important;
         margin-bottom: 10%!important;
         padding-top: 2%!important;
         padding-bottom: 10%!important;
@@ -660,10 +705,10 @@ footer {
         font-size: 4rem;
         width: 235%;
         height: 100%;
-        margin-top: 0;
+        margin-top: 20%;
         margin-bottom: 0;
         padding-left: 15%;
-        padding-top: 17%;
+        padding-top: 18%;
     }
 
     #semiColon-2 {
@@ -683,18 +728,18 @@ footer {
         width: 25rem;
         height: 4rem;
         margin-left: 0;
-        margin-top: 7%;
+        margin-top: 10%;
         padding-top: 0;
     }
 
     .heroSubtitles {
         font-size: 2.5rem;
-        margin: 5% 0 0 0;
+        margin: 1% 0 0 0;
     }
 
     .subTitle {
         font-size: 2.5rem;
-        margin: 0 0 5% 0;
+        margin: 0 0 4% 0;
     }
 
     #myName {
@@ -714,7 +759,6 @@ footer {
     .cta-arrow {
         font-size: 4rem;
     }
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
