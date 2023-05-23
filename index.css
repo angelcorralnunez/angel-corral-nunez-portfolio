@@ -29,9 +29,72 @@
 
      /* text styles */
      --acn-title-color: var(--acn--dark-color);
-     --acn-font-size: 1.25rem;
+     --acn-font-size: 1.5rem;
      --acn-font-weight: 400;
-     --acn-line-height: 1.5rem;
+     --acn-line-height: 1.75rem;
+}
+
+/* Add more selectors inside the :is rule if needed */
+
+/* Accessibility */
+
+a#skip-main, a#skip-nav {
+    color: var(--bs-dark);
+    font-weight: 700;
+}
+
+:is(a, button, input, textarea, summary) {
+    --outline-size: max(6px, 0.25em)!important;
+    --outline-style: solid!important;
+    --outline-color: var(--bs-danger)!important;
+} 
+
+:is(a, button, input, textarea, summary):focus {
+    outline:
+      var(--outline-size)
+      var(--outline-style)
+      var(--outline-color)!important;
+    outline-offset: var(--outline-offset, var(--outline-size))!important;
+} 
+
+@supports selector(:focus-visible) {
+    *:focus {
+        outline: none;
+    }
+  
+    *:focus-visible {
+        outline:
+          var(--outline-size)
+          var(--outline-style)
+          var(--outline-color);
+        outline-offset: var(--outline-offset, var(--outline-size));
+        color: var(--bs-dark)!important;
+        font-weight: 900!important;
+        background-color: var(--bs-light)!important;
+        border: 6px solid var(--bs-dark)!important;
+    }
+  }
+
+  :is(a, button, input, textarea, summary):hover {
+    outline:
+      var(--outline-size)
+      var(--outline-style)
+      var(--outline-color)!important;
+    outline-offset: var(--outline-offset, var(--outline-size))!important;
+    font-weight: 900!important;
+}
+
+#skip-main {
+    display: block;
+    transform: translate(-9999px);
+}
+
+#skip-main:focus {
+  transform: translate(0)
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
 }
 
 /*Start Sticky Footer*/
@@ -106,20 +169,12 @@ a {
     width: 100vw!important;
 }
 
-.skip-link {
-    color: rgba(255, 79, 219, 1) !important;
-}
-
-.skip-link:hover {
-    color: var(--acn-nav-link) !important;
-}
-
 .nav-item .nav-link {
-    color: var(--acn-background-color) !important;
+    color: var(--acn-background-color);
 }
 
 .nav-item .nav-link:hover {
-    color: var(--acn-nav-toggler-glow) !important;
+    color: var(--acn-nav-toggler-glow);
 }
 
 #singleSemicolon {
@@ -327,6 +382,10 @@ h5 {
     transition: .4s;
 }
 
+#cta-icon {
+    font-size: 1rem;
+}
+
 #a11y-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -350,6 +409,10 @@ h5 {
 
 #icon-508 {
     margin: 10px 15px;
+}
+
+.a11y-icons {
+    font-size: 1rem;
 }
 
 #bootstrap-icon {
@@ -418,18 +481,6 @@ h5 {
 }
 
 /* Start: Footer */
-.socialicons {
-    color: var(--acn-background-color); 
-    font-size: 2rem;
-    padding: .5rem;
-    transition: color .25s ease;
-}
-
-.socialicons:hover {
-    font-size: 2rem;
-    color: var(--acn-nav-link);
-
-}
 
 footer {
     color: var(--acn-nav-bg-color);
@@ -467,6 +518,20 @@ footer {
     var(--acn-background-color) 50%,
     var(--acn-dark-color) 100%);    
 }
+
+.socialicons {
+    color: var(--acn-background-color); 
+    font-size: 2rem;
+    padding: .5rem;
+    transition: color .25s ease;
+}
+
+.socialicons:hover {
+    font-size: 2rem;
+    color: var(--acn-nav-link);
+
+}
+
 /* End: Footer */
 
 /* Start: Media Queries */
