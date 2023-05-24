@@ -46,7 +46,7 @@ a#skip-main, a#skip-nav {
 :is(a, button, input, textarea, summary) {
     --outline-size: max(6px, 0.25em)!important;
     --outline-style: solid!important;
-    --outline-color: var(--bs-danger)!important;
+    --outline-color: var(--bs-primary)!important;
 } 
 
 :is(a, button, input, textarea, summary):focus {
@@ -77,11 +77,14 @@ a#skip-main, a#skip-nav {
 
   :is(a, button, input, textarea, summary):hover {
     outline:
-      var(--outline-size)
-      var(--outline-style)
-      var(--outline-color)!important;
-    outline-offset: var(--outline-offset, var(--outline-size))!important;
-    font-weight: 900!important;
+          var(--outline-size)
+          var(--outline-style)
+          var(--outline-color);
+        outline-offset: var(--outline-offset, var(--outline-size));
+        color: var(--bs-dark)!important;
+        font-weight: 900!important;
+        background-color: var(--bs-light)!important;
+        border: 6px solid var(--bs-dark)!important;
 }
 
 #skip-main {
@@ -337,8 +340,8 @@ h4 #myRole {
     font-size: var(--acn-font-size);
 }
 
-h5 {
-    font-size: 1.05rem;
+#emailFont {
+    font-size: 1.15rem;
 }
 
 #eventPlannerlink {
@@ -348,10 +351,6 @@ h5 {
 #eventPlannerlink:hover {
     color: rgba(255, 79, 219, 1);
     transition: .4s;
-}
-
-#code-walkthrough-cta a {
-    color: rgba(119, 17, 247, 1);
 }
 
 .sec-cta {
@@ -413,6 +412,14 @@ h5 {
 
 .a11y-icons {
     font-size: 1rem;
+}
+
+.tool-par-margin-sm {
+    margin-top: 5px;
+}
+
+.tool-par-margin-lg {
+    margin-top: 15px;
 }
 
 #bootstrap-icon {
@@ -586,8 +593,16 @@ footer {
         font-size: 1.55rem;
     }
 
+    #emailFont {
+        font-size: 1.5rem;
+    }
+
     #resumeBtn {
-        width: 50%!important;
+        width: 45%!important;
+    }
+
+    #emailBtn {
+        width: 45%!important;
     }
 
     h4 #myName {
@@ -696,6 +711,10 @@ footer {
         width: 33.33%!important;
     }
 
+    .toolbox-row-cols {
+        width: 45%!important;
+    }
+
     .footer-cta {
         width: 50%;
     }
@@ -771,8 +790,8 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    #contact {
-        /* margin: 0; */
+    .toolbox-row-cols {
+        width: 30%!important;
     }
 }
 
@@ -857,6 +876,10 @@ footer {
 
     .cta-arrow {
         font-size: 4rem;
+    }
+
+    .toolbox-row-cols {
+        width: 26%!important;
     }
 }
 
