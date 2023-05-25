@@ -29,7 +29,7 @@
 
      /* text styles */
      --acn-title-color: var(--acn--dark-color);
-     --acn-font-size: 1.5rem;
+     --acn-font-size: 1.25rem;
      --acn-font-weight: 400;
      --acn-line-height: 1.75rem;
 }
@@ -46,7 +46,7 @@ a#skip-main, a#skip-nav {
 :is(a, button, input, textarea, summary) {
     --outline-size: max(6px, 0.25em)!important;
     --outline-style: solid!important;
-    --outline-color: var(--bs-primary)!important;
+    --outline-color: var(--acn-nav-link-glow)!important;
 } 
 
 :is(a, button, input, textarea, summary):focus {
@@ -97,7 +97,7 @@ a#skip-main, a#skip-nav {
 }
 
 .custom-tooltip {
-    --bs-tooltip-bg: var(--bs-primary);
+    --bs-tooltip-bg: var(--acn-nav-link-glow);
 }
 
 /*Start Sticky Footer*/
@@ -151,6 +151,7 @@ h1, .h1 {
 
 p {
     font-size: var(--acn-font-size);
+    
 }
 
 a {
@@ -180,10 +181,6 @@ a {
     color: var(--acn-nav-toggler-glow);
 }
 
-#singleSemicolon {
-    display: none;
-}
-
 .sec-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -197,12 +194,13 @@ a {
     background-color: var(--acn-light-color);  
 }
 
-.sec-page:is(:nth-child(1),:nth-child(4),:nth-child(6)) h3 {
-    color: var(--acn-nav-link)!important;
-    text-shadow: 2px 2px 3px black;
+.sec-page:is(:nth-child(7)) {
+    background-color: var(--acn-primary-color);  
 }
 
-.sec-page:is(:nth-child(3),:nth-child(5)) h3 {
+.sec-page:is(:nth-child(1),:nth-child(3),
+:nth-child(4),:nth-child(5),:nth-child(6)) 
+h1, h2, h3, h4, h5, h6 {
     color: black!important;
     text-shadow: 1px 1px 2px rgba(33, 248, 246, 1)!important;
 }
@@ -257,9 +255,9 @@ a {
     display: grid;
     width: 100%;
     height: 100%;
-    margin-top: 0.25rem;
-    padding-top: 1.5rem;
-    font-size: 2rem;
+    margin-top: 40%;
+    padding-top: 3%;
+    font-size: 1.75rem;
     line-height: 0.5rem;
 }
 
@@ -267,7 +265,7 @@ a {
     height: 70%;
     width: 20%;
     font-size: 1.85rem;
-    margin: 4% 5% 0 11%!important;
+    margin: 2% 5% 0 20%!important;
     padding: 0 30% 0 0!important;
 }
 
@@ -280,24 +278,47 @@ a {
 
 #corral-nunez {
     height: 2rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 0.5rem;
-    margin: 4% 0 -2% 0; 
+    margin: 3% 0 -2% 0; 
 }
 
 .heroSubtitles {
     text-shadow: 2px 2px 3px var(--acn-light-color);
-    margin-top: -2%;
-    font-size: 1.25rem;
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+#amp-1 {
+    display: inline;
+}
+
+#amp-2 {
+    display: none;
+    margin: 0;
+}
+
+#span-1 {
+    display: inline;
+    margin: 0;
+}
+
+#span-2 {
+    display: none;
+    margin: 5% 0 5% 0;
+}
+
+#hero-br {
+    display: none;
+    margin: 5% 0 5% 0;
 }
 
 .subTitle {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: .1 rem;
     font-family: var(--acn-subtitle-font);  
     font-weight: 300;
     letter-spacing: .05rem;
-    margin: -1% 0 4% 0;
 }
 
 .dev {
@@ -309,13 +330,19 @@ a {
 }
 
 .btn-primary {
+    font-weight: 700;
     border: 3px solid;
     color: var(--acn-nav-link);
     --bs-btn-bg: var(--acn-dark-color);
     --bs-btn-border-color: var(--acn-bootstrap-info-color);
-    --bs-btn-hover-bg: var(--acn-nav-link);
-    --bs-btn-hover-border: var(--acn-nav-link-glow);
-    --bs-btn-hover-color: var(--acn-nav-link-glow);
+}
+
+.btn-secondary {
+    font-weight: 700;
+    border: 3px solid;
+    color: var(--acn-dark-color);
+    --bs-btn-bg: rgba(255, 255, 255, 1);
+    --bs-btn-border-color: var(--acn-dark-color);
 }
 
 .profile-pic {
@@ -324,14 +351,16 @@ a {
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-h4 #myName {
-    font-size: 1.5rem;
-    color: black;
-    text-shadow: 1px 1px 2px rgba(33, 248, 246, 1);
+h1#myName {
+    font-size: 1.6rem;
+    color: var(--acn-dark-color)!important;
+    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
 }
 
-h4 #myRole {
+h2#myRole {
     font-size: 1.35rem;
+    color: var(--acn-dark-color)!important;
+    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
 }
 
 .aboutSubtitles {
@@ -342,15 +371,17 @@ h4 #myRole {
 
 #emailFont {
     font-size: 1.15rem;
+    color: var(--acn-dark-color)!important;
+    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
+}
+
+.p-sm-font {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 #eventPlannerlink {
     color: var(--acn-nav-link); 
-}
-
-#eventPlannerlink:hover {
-    color: rgba(255, 79, 219, 1);
-    transition: .4s;
 }
 
 .sec-cta {
@@ -360,7 +391,7 @@ h4 #myRole {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: var(--acn-dark-color);
-    color: var(--acn-light-color);
+    color: var(--acn-light-color)!important;
     text-align: center;
     font-size: 1rem;
     line-height: 1.2rem;
@@ -372,17 +403,21 @@ h4 #myRole {
 }
 
 .cta-arrow {
-    color: rgba(193, 0, 254, 1);
-    font-size: 2rem;
+    color: var(--acn-nav-link-glow);
 }
 
-.cta-arrow:hover {
-    filter: brightness(1.5);
-    transition: .4s;
+#cta-h3-text {
+    color: var(--acn-light-color)!important;
+    text-shadow: none !important;
 }
 
 #cta-icon {
     font-size: 1rem;
+}
+
+.article-header-text {
+    color: var(--acn-dark-color)!important;
+    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
 }
 
 #a11y-row {
@@ -410,10 +445,6 @@ h4 #myRole {
     margin: 10px 15px;
 }
 
-.a11y-icons {
-    font-size: 1rem;
-}
-
 .tool-par-margin-sm {
     margin-top: 5px;
 }
@@ -422,9 +453,9 @@ h4 #myRole {
     margin-top: 15px;
 }
 
-#bootstrap-icon {
-    margin: 5px;
-    color: rgba(119, 17, 247, 1);
+.card-blue-borders {
+    border: 4px solid var(--acn-nav-link-glow);
+    border-radius: 30px;
 }
 
 #html-icon {
@@ -434,6 +465,11 @@ h4 #myRole {
 #aria-icon {
     margin: -40px 5px 5px 5px;
     border-radius: 2px;
+}
+
+#bootstrap-icon {
+    margin: 5px;
+    color: rgba(119, 17, 247, 1);
 }
 
 #css-icon {
@@ -455,19 +491,6 @@ h4 #myRole {
     color: var(--acn-primary-color);
 }
 
-#figma-icon {
-    margin: 10px 5px;
-}
-
-#canva-icon {
-    margin: 10px 5px;
-}
-
-#gimp-icon {
-    margin: 10px 5px;
-    color: rgba(87, 80, 64, 1);
-}
-
 #git-icon {
     margin: 10px 5px;
     color: rgba(223, 75, 51, 1);
@@ -477,14 +500,27 @@ h4 #myRole {
     margin: 10px 5px;
 }
 
+#gimp-icon {
+    margin: 10px 5px;
+    color: rgba(87, 80, 64, 1);
+}
+
 #formBox {
-    background-color: var(--acn-background-color)!important;
-    border: 3px solid var(--acn-nav-link);
+    background-color: var(--acn-light-color)!important;
+    border: 3px solid var(--acn-dark-color);
     border-radius: 12px;
 }
 
 .form-label {
     font-weight: 600;
+}
+
+input {
+    font-weight: 500;
+}
+
+textarea {
+    font-weight: 500;
 }
 
 /* Start: Footer */
@@ -573,6 +609,10 @@ footer {
     .mainLogo {
         height: 2.25rem;
         width: 2.75rem;
+    }
+
+    #br-cn {
+        display: none;
     }
 
     #corral-nunez {
