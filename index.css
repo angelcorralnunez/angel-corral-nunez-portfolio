@@ -28,7 +28,7 @@
     --acn-form-background-color: var(--acn--background-color);
 
      /* text styles */
-     --acn-title-color: var(--acn--dark-color);
+     --acn-title-color: var(--acn-nav-link-glow);
      --acn-font-size: 1.25rem;
      --acn-font-weight: 400;
      --acn-line-height: 1.75rem;
@@ -38,23 +38,12 @@
 
 /* Accessibility */
 
+--outline-size: max(6px, 0.25em)!important;
+--outline-style: solid!important;
+--outline-color: var(--acn-nav-link-glow)!important;
+
 a#skip-main, a#skip-nav {
     color: var(--bs-dark);
-    font-weight: 700;
-}
-
-:is(a, button, input, textarea, summary) {
-    --outline-size: max(6px, 0.25em)!important;
-    --outline-style: solid!important;
-    --outline-color: var(--acn-nav-link-glow)!important;
-} 
-
-:is(a, button, input, textarea, summary):focus {
-    outline:
-      var(--outline-size)
-      var(--outline-style)
-      var(--outline-color)!important;
-    outline-offset: var(--outline-offset, var(--outline-size))!important;
 } 
 
 @supports selector(:focus-visible) {
@@ -68,24 +57,16 @@ a#skip-main, a#skip-nav {
           var(--outline-style)
           var(--outline-color);
         outline-offset: var(--outline-offset, var(--outline-size));
-        color: var(--bs-dark)!important;
+        color: var(--acn-nav-link-glow)!important;
         font-weight: 900!important;
-        background-color: var(--bs-light)!important;
-        border: 6px solid var(--bs-dark)!important;
+        background-color: rgba(255, 255, 255, 1)!important;
+        border: 6px solid var(--acn-nav-link-glow)!important;
     }
   }
 
-  :is(a, button, input, textarea, summary):hover {
-    outline:
-          var(--outline-size)
-          var(--outline-style)
-          var(--outline-color);
-        outline-offset: var(--outline-offset, var(--outline-size));
-        color: var(--bs-dark)!important;
-        font-weight: 900!important;
-        background-color: var(--bs-light)!important;
-        border: 6px solid var(--bs-dark)!important;
-}
+  a#skip-main, a#skip-nav {
+    font-weight: 700!important;
+} 
 
 #skip-main {
     display: block;
@@ -95,6 +76,24 @@ a#skip-main, a#skip-nav {
 #skip-main:focus {
   transform: translate(0)
 }
+
+#skip-main:hover {
+    font-size: 1.15rem;
+    font-weight: 900;
+    border: 4px solid!important;
+    --bs-btn-hover-bg: rgba(255, 255, 255, 1)!important;
+    --bs-btn-hover-border: var(--acn-nav-link-glow)!important;
+    --bs-btn-hover-color: var(--acn-nav-link-glow)!important;
+  }
+
+  #skip-nav:hover {
+    font-size: 1.15rem;
+    font-weight: 900;
+    border: 4px solid!important;
+    --bs-btn-hover-bg: rgba(255, 255, 255, 1)!important;
+    --bs-btn-hover-border: var(--acn-nav-link-glow)!important;
+    --bs-btn-hover-color: var(--acn-nav-link-glow)!important;
+  }
 
 .custom-tooltip {
     --bs-tooltip-bg: var(--acn-nav-link-glow);
@@ -190,19 +189,20 @@ a {
     background-color: var(--acn-background-color);  
 }
 
-.sec-page:is(:nth-child(3),:nth-child(5)) {
+.sec-page:is(:nth-child(3),:nth-child(5),:nth-child(7)) {
     background-color: var(--acn-light-color);  
 }
 
-.sec-page:is(:nth-child(7)) {
-    background-color: var(--acn-primary-color);  
+.sec-page:is(:nth-child(1),:nth-child(4),:nth-child(6)) 
+h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
 }
 
-.sec-page:is(:nth-child(1),:nth-child(3),
-:nth-child(4),:nth-child(5),:nth-child(6)) 
-h1, h2, h3, h4, h5, h6 {
+.sec-page:is(:nth-child(3),:nth-child(5),:nth-child(7)) 
+h3 {
     color: black!important;
-    text-shadow: 1px 1px 2px rgba(33, 248, 246, 1)!important;
+    text-shadow: 3px 3px 4px rgb(203,112,112,1)!important;
 }
 
 /* Start: Main Header */
@@ -323,6 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dev {
     color: var(--acn-background-color)!important;
+    text-shadow: 2px 2px 3px var(--acn-bootstrap-info-color)!important;
     font-family: var(--acn-subtitle-font); 
     font-weight: 500;
     letter-spacing: .025rem;
@@ -331,18 +332,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
     font-weight: 700;
-    border: 3px solid;
-    color: var(--acn-nav-link);
+    border: 4px solid;
     --bs-btn-bg: var(--acn-dark-color);
     --bs-btn-border-color: var(--acn-bootstrap-info-color);
+    color: var(--acn-nav-link);
+}
+
+.btn-primary:hover {
+    outline:
+          var(--outline-size)
+          var(--outline-style)
+          var(--outline-color);
+    outline-offset: var(--outline-offset, var(--outline-size));
+    color: var(--acn-nav-link-glow)!important;
+    font-size: 1.15rem;
+    font-weight: 900!important;
+    background-color: rgba(255, 255, 255, 1)!important;
+    border: 6px solid var(--acn-nav-link-glow)!important;
 }
 
 .btn-secondary {
     font-weight: 700;
-    border: 3px solid;
-    color: var(--acn-dark-color);
-    --bs-btn-bg: rgba(255, 255, 255, 1);
+    border: 4px solid;
+    --bs-btn-bg: rgba(255, 255, 255, 1)!important;
     --bs-btn-border-color: var(--acn-dark-color);
+    color: var(--acn-dark-color);
+}
+
+.btn-secondary:hover {
+    outline:
+          var(--outline-size)
+          var(--outline-style)
+          var(--outline-color);
+    outline-offset: var(--outline-offset, var(--outline-size));
+    color: var(--acn-nav-link-glow)!important;
+    font-size: 1.15rem;
+    font-weight: 900!important;
+    background-color: rgba(255, 255, 255, 1)!important;
+    border: 6px solid var(--acn-nav-link-glow)!important;
 }
 
 .profile-pic {
@@ -354,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 h1#myName {
     font-size: 1.6rem;
     color: var(--acn-dark-color)!important;
-    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
+    text-shadow: 3px 3px 4px rgb(203,112,112,1)!important;
 }
 
 h2#myRole {
@@ -372,7 +399,7 @@ h2#myRole {
 #emailFont {
     font-size: 1.15rem;
     color: var(--acn-dark-color)!important;
-    text-shadow: 3px 3px 4px var(--acn-bootstrap-info-color)!important;
+    text-shadow: 3px 3px 4px rgb(203,112,112,1)!important;
 }
 
 .p-sm-font {
@@ -506,7 +533,7 @@ h2#myRole {
 }
 
 #formBox {
-    background-color: var(--acn-light-color)!important;
+    background-color: var(--acn-secondary-color)!important;
     border: 3px solid var(--acn-dark-color);
     border-radius: 12px;
 }
@@ -535,7 +562,7 @@ footer {
 
 .footer-cta {
     background-color: var(--acn-nav-link);
-    border: 3px solid var(--acn-nav-link-glow);
+    border: 4px solid var(--acn-nav-link-glow);
     border-radius: 10px;
     width: 85%;
 }
