@@ -314,19 +314,6 @@ h3 {
     padding: -2% 0 0 0;
 }
 
-.heroSubtitle3 {
-    width: 100%;
-    height: 100%;
-    font-size: 1.25rem;
-    font-family: var(--acn-subtitle-font); 
-    font-weight: 500;
-    letter-spacing: .025rem;
-    text-align: left;
-    color: white;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
 .btn-primary {
     font-weight: 700;
     border: 4px solid;
@@ -625,52 +612,60 @@ footer {
         background-image: url(/assets/4-rev-2369x783px-bg-laptop-colorful.jpg);
         height: 400px;
     }
-
-    .mainHeader-content {
-        margin: 10% 0 0 33%;
-        padding: 3% 0 0 6%;
+    
+    .mainHeader-wrapper {
+        width: 45%;
+        height: 70%;    
+        margin-left: 50%;
     }
     
     #angel {
-        width: 150%;
-        height: 100%;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding-top: 25%;
-        font-size: 2.25rem;
-        line-height: 2rem;
+        height: 90%;
+        padding-top: 12%; 
     }
     
     #semiColon-2 {
-        font-size: 1.5rem;
-        /* margin: 2.7rem 0 0 2.75rem!important;
-        padding: 0 15% 0 0!important; */
+        height: 90%;
+        padding-top: 22%;
     }
-
-    .mainLogo {
-        height: 2.25rem;
-        width: 2.75rem;
-    }
-
-    #br-cn {
-        display: none;
-    }
-
+    
     #corral-nunez {
-        height: 2.5rem;
-        font-size: 2.25rem;
-        line-height: 2rem;
-        margin: 2% 0 0 0;
+        margin-bottom: -6%;
     }
-
-    .heroSubtitles {
-        margin: 0;
-        font-size: 1.55rem;
+    
+    #subtitleParent {
+        height: 90%;
+        padding-top: 0;
     }
-
-    .subTitle {
-        margin: -1% 0 4% 0;
-        font-size: 1.55rem;
+    
+    .heroSubtitle1 {
+        height: 90%;
+        padding-top: 0;        
+    }
+    
+    #amp {
+        height: 90%;
+        margin-top: -5%;
+        margin-left: -18%;
+        width: 50%;
+    }
+    
+    .heroSubtitle2 {
+        height: 90%;
+        margin: -5% 0 0 4%;
+    }
+    
+    .heroSubtitle3 {
+        width: 100%;
+        height: 100%;
+        font-size: 1.25rem;
+        font-family: var(--acn-subtitle-font); 
+        font-weight: 500;
+        letter-spacing: .025rem;
+        text-align: left;
+        color: white;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
 
     #emailFont {
@@ -705,60 +700,67 @@ footer {
         height: 400px;
     }
 
-    .mainHeader-content {
-        margin: 0 0 0 40%;
-        padding-left: 6%;
-    }
-
     .mainHeader-wrapper {
-        margin-top: -1%;
-        margin-left: 6%!important;
-        padding-left: 3%;
+        height: 80%;
+        width: 50%;
+        margin-top: 5%;    
     }
 
-    #angelParent {
-        grid-template-columns: 35% 65%;
-        margin-bottom: 10px;
-        margin-top: 10%;
-        max-height: 3rem;
-    }
-    
     #angel {
-        width: 150%;
-        margin-top: 8%;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding-top: 0;
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    
-    #semiColon-2 {
-        font-size: 1.5rem;
-        /* padding: 15% 0 5% 15%!important;
-        margin: 15% 0 0 .25rem!important; */
+        font-size: 2.25rem;
+        height: 50%;
+        width: 85%;
+        margin-left: 10%;
+        margin-top: 20%;
+        padding: 5% 0 0 0; 
     }
 
+    #semiColon-2 {
+        height: 50%;
+        width: 60%;
+        margin-top: 40%;
+        margin-left: -20%;
+        padding: 10% 0 0 0;
+    }
+    
     .mainLogo {
-        height: 3rem;
-        width: 3.5rem;
+        height: 2.25rem;
+        width: 2.75rem;
     }
 
     #corral-nunez {
-        height: 3rem;
-        font-size: 3rem;
-        line-height: 3rem;
-        margin: 3% 0 0 0;
+        height: 70%;
+        width: 90%;
+        font-size: 2.25rem;
+        margin-top: 5%;
     }
 
-    .heroSubtitles {
-        margin: 2% 0 0 0;
-        font-size: 1.75rem;
+    #subtitleParent {
+        width: 90%;
+        height: 80%;
+        margin-top: 3%;
     }
 
-    .subTitle {
-        margin: 0 0 4% 0;
-        font-size: 1.75rem;
+    .heroSubtitle1 {
+        font-size: 1.65rem;
+        width: 100%;
+        padding-top: 1%;
+    }
+
+    #amp {
+        font-size: 1.65rem;
+        width: 50%;
+        height: 90%;
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .heroSubtitle2 {
+        font-size: 1.65rem;
+        width: 90%;
+        height: 80%;
+        margin-top: 1%;
     }
 
     h4 #myName {
@@ -803,55 +805,60 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .mainHeader {
-        margin-top: 0;
+        margin-top: 82px;
         background-image: url(/assets/6-rev-2369x783px-half-bg-laptop-colorful.jpg);
         height: 400px;
     }
 
-    .mainHeader-content {
-        margin: 7% 0 0 40%;
-    }
-
     .mainHeader-wrapper {
-        margin-top: 1%;
-        padding-left: 2%;
+        width: 55%;
+        margin-left: 45%; 
+        margin-top: 3%;    
     }
 
-    #angelParent {
-        grid-template-columns: 25% 75%;
-    }
-    
     #angel {
-        font-size: 3.15rem;
-        width: 100%;
-        margin-top: -9%;
-    }
-    
-    #semiColon-2 {
-        width: 22%;
-        /* margin-left: .75rem!important;
-        margin-top: -20%!important; */
+        font-size: 2.75rem;
+        height: 60%;
+        width: 75%;
+        margin-top: 15%;
     }
 
+    #semiColon-2 {
+        height: 60%;
+        margin-top: 30%;
+        margin-left: -35%;
+    }
+    
     .mainLogo {
-        height: 3.1rem;
-        width: 3.7rem;
+        height: 2.75rem;
+        width: 3.25rem;
     }
 
     #corral-nunez {
-        font-size: 3.25rem;
-        line-height: 3.25rem;
-        margin-top: -4%;
+        font-size: 2.75rem;
+        height: 85%;
     }
 
-    .heroSubtitles {
-        font-size: 2.15rem;
-        margin: 2% 0 0 0;
+    .heroSubtitle1 {
+        font-size: 2rem;
+        height: 70%;
+        width: 90%;
+        margin-bottom: 5%;
+        margin-top: 2%;
     }
 
-    .subTitle {
-        font-size: 2.15rem;
-        margin: -1% 0 3% 0;
+    #amp {
+        font-size: 2rem;
+        height: 70%;
+        margin-left: -45%;
+        padding-top: 0;
+    }
+
+    .heroSubtitle2 {
+        font-size: 2rem;
+        width: 90%;
+        height: 80%;
+        margin-top: 2%;
     }
 
     h4 #myName {
@@ -882,62 +889,55 @@ footer {
         height: 500px;
     }
 
-    .mainHeader-content {
-        margin: 6% 0 0 50%;
-        padding-left: 8%;
+    .mainHeader-wrapper {
+        width: 60%;
+        margin-left: 52%; 
+        margin-top: 5%;    
     }
 
-    .mainHeader-wrapper {
-        margin-left: -6%!important;
-        margin-top: -5%!important;
-        margin-bottom: 10%!important;
-        padding-top: 2%!important;
-        padding-bottom: 10%!important;
-    }
-    
-    #angelParent {
-        grid-template-columns: 20% 80%;
-    }
-    
     #angel {
-        font-size: 4rem;
-        width: 235%;
-        height: 100%;
-        margin-top: 20%;
-        margin-bottom: 0;
-        padding-left: 15%;
-        padding-top: 18%;
+        font-size: 3rem;
+        height: 60%;
+        width: 75%;
+        margin-top: 12%;
     }
 
     #semiColon-2 {
-        height: 100%;
-        /* margin-left: 28%!important;
-        margin-top: 0!important;
-        padding: 0 -5%!important; */
+        margin-top: 24%;
+        margin-left: -70%;
     }
     
     .mainLogo {
-        height: 4rem;
-        width: 4.5rem;
+        height: 3rem;
+        width: 3.75rem;
     }
 
     #corral-nunez {
-        font-size: 4rem;
-        width: 25rem;
-        height: 4rem;
-        margin-left: 0;
-        margin-top: 10%;
+        margin-top: 3%;
+        font-size: 3rem;
+    }
+
+    .heroSubtitle1 {
+        font-size: 2.5rem;
+        height: 70%;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: -2%;
+    }
+
+    #amp {
+        font-size: 2.5rem;
+        height: 70%;
+        margin-left: -85%;
+        margin-top: -10%;
         padding-top: 0;
     }
 
-    .heroSubtitles {
+    .heroSubtitle2 {
         font-size: 2.5rem;
-        margin: 1% 0 0 0;
-    }
-
-    .subTitle {
-        font-size: 2.5rem;
-        margin: 0 0 4% 0;
+        width: 75%;
+        height: 85%;
+        margin-top: 1%;
     }
 
     h4 #myName {
