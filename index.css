@@ -10,6 +10,7 @@
      --acn-dk-blue: rgba(0, 20, 255, 1);
     --acn-med-blue: rgba(0, 156, 230, 1);
     --acn-light-blue: rgba(84, 180, 211, 1);
+    --acn-blue-gray: rgba(79, 124, 172, 1);
     --acn-dk-red: rgba(173,2,2,1);
      --acn-med-red: rgba(180,29,29,1);
     --acn-light-red: rgba(203,112,112,1);
@@ -431,6 +432,18 @@ h2#myRole {
     text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
 }
 
+.line-clamp {
+    width: 100%;
+    text-align: left !important;
+    padding: 0 5%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 25;
+    line-clamp: 25;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    
 #a11y-row {
     display: grid;
     grid-template-columns: 1fr;
