@@ -193,24 +193,55 @@ a {
     padding-bottom: 5rem;
 }
 
-.sec-page.sec-page:is(:nth-child(1),:nth-child(2),:nth-child(4),:nth-child(6)) {
+.sec-page.sec-page:is(:nth-child(1)) {
+    background-color: var(--acn-dk-red);  
+}
+
+.sec-page.sec-page:is(:nth-child(2), :nth-child(3), :nth-child(5)) {
     background-color: var(--acn-white);  
 }
 
-.sec-page:is(:nth-child(3),:nth-child(5),:nth-child(7)) {
-    background-color: var(--acn-white)!important;;  
+.sec-page.sec-page:is(:nth-child(4),:nth-child(6)) {
+    background-color: var(--acn-light-gray);  
 }
 
-.sec-page:is(:nth-child(1),:nth-child(4),:nth-child(6)) 
-h3 {
+.sec-page.sec-page:is(:nth-child(7)) {
+    background-color: var(--acn-blk);  
+}
+
+.sec-page:is(:nth-child(1)) h3 {
     color: black!important;
     text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
 }
 
-.sec-page:is(:nth-child(3),:nth-child(5),:nth-child(7)) 
-h3 {
+.sec-page:is(:nth-child(2)) h3 {
     color: black!important;
     text-shadow: 3px 3px 4px var(--acn-dk-red)!important;
+}
+
+.sec-page:is(:nth-child(3)) h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
+}
+
+.sec-page:is(:nth-child(4)) h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-dk-red)!important;
+}
+
+.sec-page:is(:nth-child(5)) h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
+}
+
+.sec-page:is(:nth-child(6)) h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-dk-red)!important;
+}
+
+.sec-page:is(:nth-child(7)) h3 {
+    color: black!important;
+    text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
 }
 
 /* Start: Main Header */
