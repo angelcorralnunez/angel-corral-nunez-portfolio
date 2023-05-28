@@ -7,17 +7,29 @@
 
      /* colors */
      --acn-logo: rgba(33, 248, 246, 1);
+     /* hex: #21F8F6 */
      --acn-dk-blue: rgba(0, 20, 255, 1);
+     /* hex: #0014ff */
     --acn-med-blue: rgba(0, 156, 230, 1);
+    /* hex: #009ce6 */
     --acn-light-blue: rgba(84, 180, 211, 1);
+    /* hex: #54b4d3 */
     --acn-blue-gray: rgba(79, 124, 172, 1);
+    /* hex: #4f7cac */
     --acn-dk-red: rgba(173,2,2,1);
+    /* hex: #ad0202 */
      --acn-med-red: rgba(180,29,29,1);
+     /* hex: #b41d1d */
     --acn-light-red: rgba(203,112,112,1);
+    /* hex: #cb7070 */
      --acn-white: rgba(255, 255, 255, 1);
+     /* hex: #ffffff */
      --acn-light-gray:  rgba(196, 196, 196, 1);
+     /* hex: #c4c4c4 */
      --acn-med-gray: rgba(136, 136, 136, 1); 
+     /* hex: #888888 */
      --acn-blk: rgba(17, 17, 17, 1);
+     /* hex: #111111 */
 
      /* text styles */
      --acn-font-size: 1.25rem;
@@ -430,6 +442,10 @@ h2#myRole {
 .article-header-text {
     color: var(--acn-blk)!important;
     text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
+}
+
+.article-width {
+    width: 90%;
 }
 
 #more {
