@@ -165,14 +165,15 @@
                         Digital inclusion and web accessibility are growing concerns for many individuals and businesses. About 15% of the world 
                         population and more than 20% of Americans currently live with some form of disability. Did you know that more than 1 billion 
                         people around the world live with a disability? And, that at some point, most of us likely will face some type of temporary, 
-                        situational or permanent disability whether it stems from developing an illness, experiencing an injury, or finding your motion 
-                        severely limited while caring for a baby in one arm and trying to use just one arm for most activities. Disibilities include a 
-                        vast array of conditions and symptoms from varying categories such as visual, hearing, mobility, speech, cognitive, and 
-                        neurological. The symptoms that affect a persons navigation of digital products come in many forms that aren't typically thought 
-                        of and span a vast range of conditions like wearing glasses, color blindness, a broken arm, age related symptoms such as low 
-                        vision, neuropathy (nerve pain), learning disabilities, stammering or a heavy accent, neurodiversity like Dyslexia, ADHD or 
-                        Autism, and even neurological conditions like Parkinson's, Fibromyalgia, or Epilepsy. My point is that even if you aren't 
-                        disabled, you know someone who is and we need to start making both the physical and digital worlds more accessible.
+                        situational or permanent disability whether it stems from developing an illness, experiencing an injury, or finding your 
+                        motion severely limited while caring for a baby in one arm and trying to use just one arm for most activities. Disibilities 
+                        include a vast array of conditions and symptoms from varying categories such as visual, hearing, mobility, speech, cognitive, 
+                        and neurological. The symptoms that affect a persons navigation of digital products come in many forms that aren't typically 
+                        thought of and span a vast range of conditions like wearing glasses, color blindness, a broken arm, age related symptoms such 
+                        as low vision, neuropathy (nerve pain), learning disabilities, stammering or a heavy accent, neurodiversity like Dyslexia, 
+                        ADHD or Autism, and even neurological conditions like Parkinson's, Fibromyalgia, or Epilepsy. My point is that even if you 
+                        aren't disabled, you know someone who is and we need to start making both the physical and digital worlds more 
+                        accessible<span id="dots">...</span><spa id="more">
                         <br>
                         <br>
                         How many of of you have used Siri or other voice assistants to make a call or send a text message? What about using an electric
@@ -290,7 +291,9 @@
                         Want to learn more about how to make your website and products accessible? Contact me today to schedule a free
                         consultation and an affordable accessibility audit of your website and products with a summary of found 
                         non-compliance issues and recommendations for remediation fitting your budget and timeline.
+                    </span>
                     </p>
+                    <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
         </section>
         <section id="certifications" class="sec-page m-auto">
             <h3 class="mt-0 mb-3 ms-1">Accessibility Certificiations & Skills</h3>
@@ -1226,5 +1229,23 @@
         boundary: document.body // or document.querySelector('#boundary')
     })
 </script>
+
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 
 </html>

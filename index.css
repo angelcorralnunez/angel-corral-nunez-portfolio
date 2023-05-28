@@ -432,16 +432,8 @@ h2#myRole {
     text-shadow: 3px 3px 4px var(--acn-dk-blue)!important;
 }
 
-.line-clamp {
-    width: 100%;
-    text-align: left !important;
-    padding: 0 5%;
-    display: -webkit-box;
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 25;
-    line-clamp: 25;
-    overflow: hidden;
-    text-overflow: ellipsis;
+#more {
+    display: none;
 }
     
 #a11y-row {
