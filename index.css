@@ -190,7 +190,7 @@ h3 {
 
 .sec-page:is(:nth-child(1)) h3 {
     color: var(--acn-logo)!important;
-    text-shadow: 1px 1px 2px var(--acn-blk)!important;
+    text-shadow: 3px 3px 4px var(--acn-blk)!important;
 }
 
 .sec-page:is(:nth-child(3)) .header-3 {
@@ -338,11 +338,11 @@ h3 {
 }
 
 .btn-hero:hover {
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .btn-hero:focus-visible {
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -694,6 +694,7 @@ footer {
 
 .footer-message {
     color: var(--acn-logo);
+    text-shadow: 1px 1px 2px var(--acn-white)!important;
     letter-spacing: .1rem;
     font-size: 2rem;
 }
@@ -797,8 +798,20 @@ footer {
     }
     
    #hero-btn {
-        width: 40%!important;
+        width: 35%!important;
         margin: auto 0;
+    }
+
+    .btn-hero {
+        font-size: 1rem;
+    }
+    
+    .btn-hero:hover {
+        font-size: 1.05rem;
+    }
+    
+    .btn-hero:focus-visible {
+        font-size: 1.05rem;
     }
 
     #myBtn {
@@ -882,9 +895,25 @@ footer {
     }
 
     #hero-btn {
-        font-size: 1.25rem;
         width: 33.33%!important;
         margin: auto 0; 
+    }
+
+    .btn-hero {
+        font-size: 1.3rem;
+    }
+    
+    .btn-hero:hover {
+        font-size: 1.35rem;
+    }
+    
+    .btn-hero:focus-visible {
+        font-size: 1.35rem;
+    }
+
+    #hero-btn {
+        width: 35%!important;
+        margin: auto 0;
     }
 
     #myBtn {
@@ -992,9 +1021,21 @@ footer {
         height: 90%;
         margin-top: 0;
     }
-    
+
     #hero-btn {
-        font-size: 1.75rem;
+        width: 33.33%!important; 
+    }
+
+    .btn-hero {
+        font-size: 1.6rem;
+    }
+    
+    .btn-hero:hover {
+        font-size: 1.65rem;
+    }
+    
+    .btn-hero:focus-visible {
+        font-size: 1.65rem;
     }
 
     h4 #myName {
@@ -1037,6 +1078,18 @@ footer {
 
     #corral-nunez {
         margin-top: 1%;
+    }
+
+    .btn-hero {
+        font-size: 1.75rem;
+    }
+    
+    .btn-hero:hover {
+        font-size: 1.85rem;
+    }
+    
+    .btn-hero:focus-visible {
+        font-size: 1.85rem;
     }
 
     h4 #myName {
