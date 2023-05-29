@@ -103,11 +103,11 @@
             <h3 class="ms-2 mb-lg-0">About Me</h3>
             <div class="row g-3 m-auto">
                 <div class="col-12 col-lg-4 mb-3">
-                    <picture id="prof-pic-angel">
+                    <picture class="d-flex">
                         <source media="(min-width: 992px)" srcset="/assets/Angel Corral Nunez/992x1065pxAngel_snowpic.jpg" alt="Photo of Angel Corral Nunez" />
                         <source media="(min-width: 768px)" srcset="/assets/Angel Corral Nunez/768x825pxAngel_snowpic.jpg" alt="Photo of Angel Corral Nunez" />
-                        <source media="(min-width: 576px)" srcset="/assets/Angel Corral Nunez/567x618pxAngel_snowpic.jpg" alt="Photo of Angel Corral Nunez" />
-                        <img src="/assets/Angel Corral Nunez/600x767pxAngel_snowpic.jpg" class="img-fluid profile-pic" alt="Photo of Angel Corral Nunez">
+                        <source media="(min-width: 576px)" srcset="/assets/Angel Corral Nunez/576x618pxAngel_snowpic.jpg" alt="Photo of Angel Corral Nunez" />
+                        <img class="img-fluid profile-pic prof-pic-hw" src="/assets/Angel Corral Nunez/600x767pxAngel_snowpic.jpg" alt="Photo of Angel Corral Nunez">
                     </picture>
                 </div>
                 <div class="col-12 col-lg-8 px-md-5">
@@ -120,7 +120,7 @@
                         I am helping to achieve the ultimate goal of equality in web accessibility one page at a time.                    
                     </p>
                     <div class="row row-cols-1">
-                    <h5 id="emailFont" class="col m-auto mt-3">angelcorralnunez<br id="email-br" >@gmail.com</h5>
+                    <h5 id="emailFont" class="col m-auto mt-3">angelcorralnunez<br id="email-br">@gmail.com</h5>
                     <a id="emailBtn" aria-label="SendEmail" aria-describedby="mail-new-win" 
                     href="mailto:angelcorralnunez@gmail.com" target="blank" type="button" class="btn btn-primary m-auto mt-4 w-75">
                     Send Email
@@ -135,14 +135,14 @@
             </div>
         </section>
         <section class="sec-page sec-cta">
-            <i class="cta-arrow bi bi-arrow-right-square-fill bi-arrows mx-sm-1 mx-lg-5"></i>
+            <i id="cta-arrow-T-L" class="cta-arrow bi bi-arrow-right-square-fill bi-arrows"></i>
             <h3 id="cta-h3-text" >Want to see my recent work?<br>Check out my 
                 <a class="cta-link" aria-describedby="skip-to-event-app" 
                 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" 
-                data-bs-title="App opens in a new tab" href="#">Event Planner! 
+                data-bs-title="App opens in a new tab" href="#"><br id="top-cta-br">Event Planner! 
                 <i id="cta-icon" class="open-link-icon bi bi-box-arrow-up-right"></i></a>
             </h3>
-            <i aria-hidden="true" class="cta-arrow bi bi-arrow-left-square-fill bi-arrows mx-sm-1 mx-lg-5"></i>
+            <i id="cta-arrow-T-R" aria-hidden="true" class="cta-arrow bi bi-arrow-left-square-fill bi-arrows"></i>
         </section>
         <section id="accessibility" class="sec-page m-auto">
             <div>
@@ -379,14 +379,14 @@
             </div>
         </section>
         <section class="sec-page sec-cta-2">
-            <i class="cta-arrow bi bi-arrow-right-square-fill bi-arrows mx-sm-1 mx-lg-5"></i>
+            <i id="cta-arrow-B-L" class="cta-arrow bi bi-arrow-right-square-fill bi-arrows"></i>
             <h3 id="cta-h3-text"class="text-center">Want to find out more about my projects?
                 <br>
                 <a class="cta-link" aria-describedby="skip-to-contact-form" 
                 href="#contact">Contact Me</a>
                 for a complete code walk through.
             </h3>
-            <i aria-hidden="true" class="cta-arrow bi bi-arrow-left-square-fill bi-arrows mx-sm-1 mx-lg-5"></i>
+            <i id="cta-arrow-B-R" aria-hidden="true" class="cta-arrow bi bi-arrow-left-square-fill bi-arrows"></i>
         </section>
         <section id="projects" class="sec-page m-auto">
             <h3 class="mt-0 mb-3 ms-1">My Projects</h3>
@@ -591,7 +591,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-main py-3 row row-cols-1 row-cols-md-3 gy-3 text-center align-items-center">
+    <div class="footer-main py-3 row row-cols-1 row-cols-lg-3 gy-3 text-center align-items-center">
         <div class="col">
             <img src="/assets/HC ACN Logo/HC Logo Files/For Web/svg/ACN Color logo - no background.svg" height="50" width="350" alt="Angel Corral Nunez logo image">
         </div>
