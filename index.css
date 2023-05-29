@@ -618,7 +618,7 @@ a.proj-link-red:focus-visible {
 
 #css-icon {
     margin: 5px;
-    color: var(--acn-med-blue);
+    color: rgba(0, 156, 230, 1);
 }
 
 #sass-icon {
@@ -638,7 +638,7 @@ a.proj-link-red:focus-visible {
 
 #vscode-icon {
     margin: 10px 5px;
-    color: var(--acn-light-blue);
+    color: rgba(0, 178, 148, 1);
 }
 
 #git-icon {
