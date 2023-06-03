@@ -131,7 +131,7 @@ p {
 /* End Element Overrides */
 
 .navbar-toggler {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border: 4px solid var(--acn-logo);
     background-color: var(--acn-blk)!important;
     color: var(--acn-logo);
@@ -143,13 +143,14 @@ p {
 }
 
 .nav-link {
-    font-weight: 800;
+    font-size: 1rem!important;
+    font-weight: 700;
     color: var(--acn-white);
 }
 
 .nav-link:hover {
     color: var(--acn-logo);
-    font-size: 1.25rem;
+    font-size: 1.15rem!important;
     border-bottom: 5px solid var(--acn-white);
 }
 
@@ -701,6 +702,7 @@ footer {
 
 .ftr-cta-txt {
     color: var(--acn-white);
+    text-shadow: 1px 1px 2px var(--acn-blk)!important;
     font-family: var(--acn-body-font);
 }
 
@@ -710,7 +712,7 @@ footer {
 
 .footer-message {
     color: var(--acn-logo);
-    text-shadow: 1px 1px 2px var(--acn-white)!important;
+    text-shadow: 1px 1px 2px var(--acn-blk)!important;
     letter-spacing: .1rem;
     font-size: 1.75rem;
 }
@@ -931,15 +933,15 @@ footer {
     }
 
     .btn-hero {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
     
     .btn-hero:hover {
-        font-size: 1.35rem;
+        font-size: 1.3rem;
     }
     
     .btn-hero:focus-visible {
-        font-size: 1.35rem;
+        font-size: 1.3rem;
     }
 
     #hero-btn {
@@ -1046,19 +1048,19 @@ footer {
     }
 
     #hero-btn {
-        width: 25%!important; 
+        width: 30%!important; 
     }
 
     .btn-hero {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .btn-hero:hover {
-        font-size: 1.65rem;
+        font-size: 1.55rem;
     }
     
     .btn-hero:focus-visible {
-        font-size: 1.65rem;
+        font-size: 1.55rem;
     }
 
     .prof-pic-hw {
@@ -1106,18 +1108,6 @@ footer {
 
     #corral-nunez {
         margin-top: 1%;
-    }
-
-    .btn-hero {
-        font-size: 1.75rem;
-    }
-    
-    .btn-hero:hover {
-        font-size: 1.85rem;
-    }
-    
-    .btn-hero:focus-visible {
-        font-size: 1.85rem;
     }
 
     .sec-cta {
